@@ -1,3 +1,4 @@
+
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
 	Author: Designstub
@@ -27,7 +28,7 @@ h1 {
 
 }
 h2 {
-	font-size: 40px;
+	font-size: 25px;
 	font-family: arial;
 	color: white;
 }
@@ -53,7 +54,7 @@ h5 {
 .btn {
 	background-color: #e95491;
 	color: #fff;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 600;
 	letter-spacing: 5px;
 	border: 0;
@@ -74,7 +75,7 @@ h5 {
 .btn2 {
 	background-color: #0c1a24;
 	color: #fff;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 5px;
 	border: 0;
@@ -327,7 +328,6 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Banner
 -------------------------------------------------------------------------------*/
-
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-position: center top;
@@ -357,7 +357,7 @@ ul li {
 .banner-text h2 {
 	color: black;
 	font-family: "bebas";
-	font-size: 43px;
+	font-size: 32px;
 	letter-spacing: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -378,12 +378,20 @@ ul li {
 	letter-spacing: 3px;
 	line-height: 24px;
 	margin-top: 10px;
-	margin-bottom: 80px;
 	text-transform: uppercase;
+}
+
+.banner button{
+    color:black;
+    font-family: bebas;
+    background:white;
+    padding:10px;
+    font-size:20px;
 }
 /* ------------------------------------------------------------------------------
 	 Intro
 -------------------------------------------------------------------------------*/
+
 .intro {
 	background-color: white;
 
@@ -395,22 +403,66 @@ ul li {
 }
 .intro h1 {
 	color: #2d3033;
-	font: 60px "bebas";
+	font: 30px "bebas";
 	padding-bottom: 25px;
 }
 .intro p {
 	color: #2d3033;
 	font: 18px "Arial"; 
-	font-size: 20px;
+	font-size: 14px;
 	font-style: normal;
 	letter-spacing: 30%;
 	font-weight: 400;
+}
+.intro h3 {
+    font-family:arial;
+}
+
+/* ------------------------------------------------------------------------------
+	 About
+-------------------------------------------------------------------------------*/
+section#about{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+.about {
+	background-color: white;
 
 }
+.about blockquote {
+	border: 0;
+	margin: 0;
+	padding: 50px 15% 0;
+}
+.about h1 {
+	color: #2d3033;
+	font: 30px "bebas";
+	padding-bottom: 25px;
+}
+.about p {
+	color: #2d3033;
+	font: 18px "Arial"; 
+	font-size: 14px;
+	font-style: normal;
+	letter-spacing: 30%;
+	font-weight: 400;
+}
+.about h3 {
+    font-family:bebas;
+    font-size:16px;
+}
+
 
 /* ------------------------------------------------------------------------------
 	 Register
 -------------------------------------------------------------------------------*/
+span.registeroptions{
+    font-family:arial;
+    vertical-align: middle;
+}
 .registeroptions{
     color:black;
 }
@@ -425,7 +477,7 @@ ul li {
 }
 .register h1 {
 	color: white;
-	font: 60px "bebas";
+	font: 35px "bebas";
 	padding-bottom: 25px;
 }
 .register p {
@@ -440,6 +492,14 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 FAQ
 -------------------------------------------------------------------------------*/
+section#faq{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
 .faq {
 	background-color: white;
 
@@ -450,10 +510,10 @@ ul li {
 	padding: 50px 15% 0;
 }
 .faq h1 {
-	color: #000;
-	font: 60px "bebas";
+	color: #2d3033;
+	font: 30px "bebas";
 	padding-bottom: 25px;
-    text-align: center;
+    text-align:center;
 }
 .faq p {
 	color: #6c7279;
@@ -482,7 +542,7 @@ ul li {
 
 .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
     color:black;
-    font-size:25px;
+    font-size:12px;
     shape-inside: circle();
 }
 
@@ -490,7 +550,7 @@ ul li {
 .banner-text h3 {
 	color: black;
 	font-family: "bebas";
-	font-size: 33px;
+	font-size: 24px;
 	letter-spacing: 10px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -505,13 +565,38 @@ ul li {
 	text-transform: uppercase;
 }
 
+.circle 
+ {
+ border-radius: 50px;
+ height: 100px;
+ width: 100px;
+ background: linear-gradient(to right, blue 50%, red 50%);
+ background-size: 200% 100%;
+ background-position: right bottom;
+ transition: all 2s ease;
+ }
+
+ .circle:hover {
+  background-position: left bottom;
+  } 
+
 
 /* ------------------------------------------------------------------------------
 	 SPONSOR
 -------------------------------------------------------------------------------*/
-.sponsor {
-	background-color: #fdab5f;
+section#sponsorship{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+.sponsor{
+    background-image: url("img/background/pink_sticky.png");
+}
 
+.sponsor {
+	background-color: white;
 }
 .sponsor blockquote {
 	border: 0;
@@ -519,141 +604,51 @@ ul li {
 	padding: 50px 15% 0;
 }
 .sponsor h1 {
-	color: white;
-	font: 60px "bebas";
+	color: black;
+	font: 30px "bebas";
 	padding-bottom: 25px;
 }
 .sponsor p {
-	color: #99004d;
-	font: 60px "bebas"; 
-	font-size: 20px;
+	color: black;
+    padding:10px;
+	font: 12px "arial"; 
 	font-style: normal;
 	font-weight: 400;
 
 }
 
 .sponsor h2 {
-	color: white;
-	font: 50px "bebas";
-	padding-bottom: 15px;
+	color: black;
+    text-align: center;
+	font: 14px "bebas"; 
+	font-style: normal;
+	font-weight: 400;
 }
 
 .sponsor h3 {
-	color: white;
-	font: 50px "bebas";
+	color: black;
+	font: 30px "bebas";
 	padding-bottom: 15px;
 }
 
 .sponsor h4 {
-	color: white;
+	color: black;
 	font: 30px "bebas";
 	padding-bottom: 15px;
 }
 
 
-
-
-/* ------------------------------------------------------------------------------
-	 Services
--------------------------------------------------------------------------------*/
-.service-section {
-	padding-top: 100px;
-}
-.services {
-	margin-bottom: 50px;
-}
-.services-content {
-	padding: 0 15px;
-	margin-top: 30px;
-}
-.services .icon {
-	color: #e84545;
-	font-size: 36px;
-	padding-left: 15px;
-}
-/* ------------------------------------------------------------------------------
-	 Works
--------------------------------------------------------------------------------*/
-.work {
-	-moz-box-shadow: 0 0 0 1px #fff;
-	-webkit-box-shadow: 0 0 0 1px #fff;
-	box-shadow: 0 0 0 1px #fff;
-	overflow: hidden;
-	position: relative;
-}
-.work img {
-	width: 100%;
-	height: 100%;
-}
-.work .overlay {
-	background: rgba(232, 69, 69, 0.9);
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	-moz-transition: opacity, 0.3s;
-	-o-transition: opacity, 0.3s;
-	-webkit-transition: opacity, 0.3s;
-	transition: opacity, 0.3s;
-}
-.work .overlay-caption {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	width: 100%;
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.work h5, .work p, .work img {
-	-moz-transition: all, 0.5s;
-	-o-transition: all, 0.5s;
-	-webkit-transition: all, 0.5s;
-	transition: all, 0.5s;
-}
-.work h5, .work p {
-	color: #fff;
-	margin: 0;
-	opacity: 0;
-}
-.work span {
-	font-size: 45px;
-}
-.work h5 {
-	margin-bottom: 5px;
-	-moz-transform: translate3d(0, -200%, 0);
-	-ms-transform: translate3d(0, -200%, 0);
-	-webkit-transform: translate3d(0, -200%, 0);
-	transform: translate3d(0, -200%, 0);
-}
-.work p {
-	-moz-transform: translate3d(0, 200%, 0);
-	-ms-transform: translate3d(0, 200%, 0);
-	-webkit-transform: translate3d(0, 200%, 0);
-	transform: translate3d(0, 200%, 0);
-}
-.work-box:hover img {
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-.work-box:hover .overlay {
-	opacity: 1;
-}
-.work-box:hover .overlay h5, .work-box:hover .overlay p {
-	opacity: 1;
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+section#profile{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
 .person {
 	max-width: 270px;
 	font: bebas;
@@ -662,6 +657,19 @@ ul li {
 .person-content {
 	margin-top: 20px;
 	font: bebas;
+}
+.profile h3{
+    font-size:20px;
+}
+
+.profile h1{
+    color: #2d3033;
+	font: 30px "bebas";
+	padding-bottom: 25px;
+}
+
+.profile h2: {
+    
 }
 .person h4 {
 	font-weight: 400;
@@ -674,6 +682,27 @@ ul li {
 	font-weight: 400;
 	margin-bottom: 20px;
 }
+
+.profile{
+    text-align: center;
+}
+.profile h2 {
+    color:black;
+    font-size:20px;
+}
+.profiledescription{
+    color:#fa8dd5;
+}
+
+.profile p {
+	color: #2d3033;
+	font: 12px "arial"; 
+	font-style: normal;
+	font-weight: 400;
+    margin: 0 0 0px;
+
+}
+
 .social-icons, .footer .footer-share {
 	margin-top: 30px;
 }
@@ -702,50 +731,16 @@ ul li {
 	color: #fff;
 }
 /* ------------------------------------------------------------------------------
-	 Testimonials
--------------------------------------------------------------------------------*/
-.testimonials {
-	background-color: #e84545;
-	position: relative;
-	text-align: center;
-}
-.testimonials blockquote {
-	border: 0;
-	margin: 0;
-	padding: 100px 15%;
-}
-.testimonials h1 {
-	color: #fff;
-	font: 23px "Source Sans Pro";
-	font-weight: 300;
-}
-.testimonials p {
-	color: #fff;
-	display: block;
-	font-size: 13px;
-	font-style: normal;
-	letter-spacing: 2px;
-	font-weight: 400;
-	margin-top: 30px;
-	text-transform: uppercase;
-}
-/* ------------------------------------------------------------------------------
-	Quote
--------------------------------------------------------------------------------*/
-.quote h3 {
-	margin-top: 0;
-}
-.quote p {
-	color: #2d3033;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-.quote .btn {
-	margin-top: 30px;
-}
-/* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
+section#footer{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
 .footer {
 	text-align: left;
 	font-size: 20px;
@@ -792,40 +787,20 @@ ul li {
 	color: black;
 }
 
-/*Profile Styling*/
-
-.profile{
-    text-align: center;
-}
-.profile h2 {
-    color:black;
-    font-size:20px;
-    margin-top: 5px;
-}
-.profiledescription{
-    color:#fa8dd5;
-}
-
-.profile p {
-	color: #2d3033;
-	font: 20px "arial"; 
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-
-}
-
-.profile h1 {
-	color: #2d3033;
-	font: 60px "bebas";
-	padding-bottom: 25px;
-}
-
 /* ------------------------------------------------------------------------------
 	 Event Description
 -------------------------------------------------------------------------------*/
+section#description{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
 .description {
-	background-color: #80b2ef;
+	background-color: white;
+    color:black;
 
 }
 .description blockquote {
@@ -834,9 +809,13 @@ ul li {
 	padding: 50px 15% 0;
 }
 .description h1 {
-	color: white;
-	font: 60px "bebas";
+	color: #2d3033;
+	font: 30px "bebas";
 	padding-bottom: 25px;
+    text-align: center;
+}
+.description h2{
+    color:black;
 }
 .description p {
 	color: #2d3033;
