@@ -53,4 +53,17 @@ $(document).ready(function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
 	});
+
+	var wordArray = ["BOSTON", "FEB 16-18"]
+	var indexWords = 0
+
+	function animateWords() {
+		indexWords = (indexWords >= wordArray.length-1) ? 0 :indexWords+1;
+		$('#anim-text').text(function(i,t){
+			return wordArray[indexWords];
+		});
+	}
+
+	animateWords(); //RunOnce
+	setInterval(function(){animateWords()},1800); //thenrepeat
 });
