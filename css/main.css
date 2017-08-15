@@ -524,6 +524,12 @@ i {
 	width:50%;
 	display:block;
 }
+#socialicon{
+  width:50px;
+  height:50px;
+  margin-top:10px;
+  margin-left:10px;
+}
 /* ------------------------------------------------------------------------------
 	 Intro
 -------------------------------------------------------------------------------*/
@@ -589,8 +595,14 @@ section#about{
 .about h3 {
     font-family:bebas;
     font-size:16px;
+    letter-spacing:4px;
 }
-
+#sponsor-info{
+  padding-top:15px;
+}
+#advocate-info{
+  padding-top:13px;
+}
 
 /* ------------------------------------------------------------------------------
 	 Register
@@ -614,7 +626,7 @@ span.registeroptions{
 .register h1 {
 	color: white;
 	font: 35px "bebas";
-	padding-bottom: 25px;
+    padding-left:20px;
 }
 .register p {
 	color: #99004d;
@@ -623,6 +635,21 @@ span.registeroptions{
 	font-style: normal;
 	font-weight: 400;
 
+}
+#contact-info {
+  color:white;
+  font: 12px "arial";
+  
+}
+.contact-info-style {
+  margin-top:20px;
+  border-top: 2px white;
+  border-style:dashed;
+  border-bottom:none;
+  border-right:none;
+  border-left:none;
+  width:50%;
+  padding-top:10px;
 }
 
 /* ------------------------------------------------------------------------------
@@ -715,7 +742,10 @@ section#faq{
  .circle:hover {
   background-position: left bottom;
   } 
-
+i{
+  margin-bottom:3px;
+  margin-left:2px;
+}
 
 /* ------------------------------------------------------------------------------
 	 SPONSOR
@@ -918,6 +948,10 @@ section#profile{
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
+#followus {
+  color:white;
+  margin-top:30px;
+}
 section#footer{
     border-top: 10px black;
     border-style:dashed;
@@ -996,11 +1030,15 @@ section#description{
 .description h1 {
 	color: #2d3033;
 	font: 30px "bebas";
-	padding-bottom: 25px;
+	padding-bottom: 10px;
     text-align: center;
 }
 .description h2{
-    color:black;
+  color:black;
+  padding-top:0px;
+  padding-left:20px;
+  padding-right:20px;
+  margin:0;
 }
 .description p {
 	color: #2d3033;
