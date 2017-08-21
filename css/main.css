@@ -1,4 +1,39 @@
 
+/* relevant styles */
+.container {
+  position: relative;
+  width:100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  font-size: 14px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color:black;
+  font-family:"bebas";
+  letter-spacing: 2px;
+}
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
 	Author: Designstub
@@ -132,6 +167,17 @@ ul li {
 .space {
 	margin-top: 60px;
 }
+/* ------------------------------------------------------------------------------
+	Get Invovled 
+-------------------------------------------------------------------------------*/
+#get-involved {
+	margin:40px;
+}
+
+.img-involved-size {
+    height:80%;
+}
+
 /* ------------------------------------------------------------------------------
 	 Header
 -------------------------------------------------------------------------------*/
@@ -524,11 +570,19 @@ i {
 	width:50%;
 	display:block;
 }
-#socialicon{
+#socialicon-facebook{
   width:50px;
   height:50px;
-  margin-top:10px;
-  margin-left:10px;
+  display: block;
+  margin-left: auto;
+  margin-top:20px;
+}
+#socialicon-instagram{
+  width:50px;
+  height:50px;
+  display: block;
+  margin-right: auto;
+  margin-top:20px;
 }
 /* ------------------------------------------------------------------------------
 	 Intro
@@ -563,6 +617,20 @@ i {
 /* ------------------------------------------------------------------------------
 	 About
 -------------------------------------------------------------------------------*/
+/*Styling The Addtion Symbols*/
+#add {
+	margin-left:15px;
+	margin-right:15px;
+}
+/*Styling The Multiplication Symbols*/
+#multiply {
+	margin-left:15px;
+	margin-right:15px;
+}
+#equal {
+	margin-left:15px;
+	margin-right:15px;
+}
 section#about{
     border-top: 10px black;
     border-style:dashed;
@@ -607,16 +675,15 @@ section#about{
 /* ------------------------------------------------------------------------------
 	 Register
 -------------------------------------------------------------------------------*/
-span.registeroptions{
+#mailchimp-action {
+	font-size:16px;
+}
+span.registeroptions {
     font-family:arial;
     vertical-align: middle;
 }
-.registeroptions{
+.registeroptions {
     color:black;
-}
-.register {
-	background-color: #fa8dd5;
-
 }
 .register blockquote {
 	border: 0;
@@ -848,6 +915,12 @@ section#sponsorship{
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+#team-link {
+	color:black;
+}
+a:hover#team-link {
+    color: red;
+}
 .profile-img-container > div {
 	margin-bottom: 100px;
 }
@@ -917,26 +990,23 @@ section#profile{
     margin: 0 0 0px;
 
 }
+/*Centering an Image*/
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.social-icons, .footer .footer-share {
-	margin-top: 30px;
-}
-.social-icons li, .footer .footer-share li {
-	display: inline-block;
-	float: none;
-}
 .social-icons a, .footer .footer-share a {
 	border: 1px solid #e8ecee;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	color: #c6cacc;
-	display: block;
 	font-size: 14px;
 	font: bebas;
 	height: 32px;
 	line-height: 32px;
-	margin-right: 5px;
 	text-align: center;
 	width: 32px;
 }
@@ -948,6 +1018,9 @@ section#profile{
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/
+.pink{
+	background-color:#fa8dd5;
+}
 #followus {
   color:white;
   margin-top:30px;
@@ -1042,8 +1115,7 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font: 60px "bebas"; 
-	font-size: 20px;
+	font: 18px "arial"; 
 	font-style: normal;
 	font-weight: 400;
 
