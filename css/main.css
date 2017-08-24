@@ -5,7 +5,7 @@
   width:100%;
 }
 
-.overlay {
+.overlay-sponsor {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -17,9 +17,53 @@
   transition: .5s ease;
 }
 
-.container:hover .overlay {
+.container-sponsor:hover .overlay-sponsor {
   height: 100%;
 }
+.container-volunteer:hover .overlay-volunteer {
+  height: 100%;
+}
+.container-advocate:hover .overlay-advocate {
+  height: 100%;
+}
+.container-celebrate:hover .overlay-celebrate {
+  height: 100%;
+}
+.overlay-volunteer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay-advocate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlay-celebrate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
 
 .text {
   white-space: nowrap;
@@ -374,8 +418,16 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Banner
 -------------------------------------------------------------------------------*/
+#banner-subtext {
+	font-family:arial;
+	font-size:16px;
+	text-transform: lowercase;
+}
+#uppercase {
+	text-transform:uppercase;
+}
 i {
-    border: solid black;
+    border: solid red;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -395,9 +447,10 @@ i {
 
 @keyframes textanimation {
 	0% {color:white;}
-	20% {color:#82dcfe;}
-	60% {color:#fa8dd5;}
-	100% {color:#6bd9d0;}  
+	20% {color:#fa8dd5;}
+	60% {color:#fdab5f;}
+	80% {color:#c0d072;}
+	100% {color:#82ccca;}  
 }
 
 #register1 {
@@ -500,6 +553,14 @@ i {
 		top:177px;
 		left:-20px;
 	}
+	#infographic-about{
+		width:330px;
+		height:60px;
+	}
+	#infographic-hackathon{
+		width:360px;
+		height:60px;
+	}
 }
 
 .banner {
@@ -576,6 +637,7 @@ i {
   display: block;
   margin-left: auto;
   margin-top:20px;
+  margin-bottom:10px;
 }
 #socialicon-instagram{
   width:50px;
@@ -583,6 +645,7 @@ i {
   display: block;
   margin-right: auto;
   margin-top:20px;
+  margin-bottom:10px;
 }
 /* ------------------------------------------------------------------------------
 	 Intro
