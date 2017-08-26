@@ -4,55 +4,8 @@
   position: relative;
   width:100%;
 }
-.container:hover .overlay-profile {
-	height: 100%;
-}
-.overlay-profile {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-.container-sponsor:hover .overlay-sponsor {
-  height: 100%;
-}
-.container-volunteer:hover .overlay-volunteer {
-  height: 100%;
-}
-.container-advocate:hover .overlay-advocate {
-  height: 100%;
-}
-.container-celebrate:hover .overlay-celebrate {
-  height: 100%;
-}
-.overlay-sponsor {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-.overlay-volunteer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-.overlay-advocate {
+
+.overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -64,23 +17,15 @@
   transition: .5s ease;
 }
 
-.overlay-celebrate {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
+.container:hover .overlay {
+  height: 100%;
 }
 
 .text {
   white-space: nowrap;
   font-size: 14px;
   position: absolute;
-  overflow: wrap;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -103,7 +48,10 @@
 
 @font-face {
   font-family: "bebas";
-  src: url('bebas.ttf');}
+  src: url('bebas.ttf');
+}
+
+
 
 p {
 	font-size: 14px;
@@ -119,7 +67,7 @@ h1 {
 }
 h2 {
 	font-size: 25px;
-	font-family: arial;
+	font-family: Roboto;
 	color: white;
 }
 h3 {
@@ -159,7 +107,7 @@ h5 {
 }
 .btn-large {
 	padding: 15px 40px;
-	font-family: arial;
+	font-family: Roboto;
 }
 
 .btn2 {
@@ -173,7 +121,7 @@ h5 {
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	display: inline-block;
-    font-family: arial;
+    font-family: Roboto;
     margin-top: 20px;
 }
 .btn:hover2, .btn:focus2 {
@@ -188,7 +136,7 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #e84545;
+	color: #ffb400;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -198,7 +146,7 @@ a:hover, a:focus {
 	transition: background-color, color, 0.3s;
 }
 body {
-	font-family: "Source Sans Pro";
+	font-family: "Roboto";
 	font-weight: 400;
 	color: #6c7279;
 }
@@ -429,17 +377,8 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Banner
 -------------------------------------------------------------------------------*/
-#banner-subtext {
-	font-family:arial;
-	font-size:16px;
-	text-transform: lowercase;
-	font-variant-caps:all-petite-caps;
-}
-#uppercase {
-	text-transform:uppercase;
-}
 i {
-    border: solid red;
+    border: dashed black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -459,10 +398,9 @@ i {
 
 @keyframes textanimation {
 	0% {color:white;}
-	20% {color:#fa8dd5;}
-	60% {color:#fdab5f;}
-	80% {color:#c0d072;}
-	100% {color:#82ccca;}  
+	20% {color:#82dcfe;}
+	60% {color:#fa8dd5;}
+	100% {color:#6bd9d0;}  
 }
 
 #register1 {
@@ -565,19 +503,6 @@ i {
 		top:177px;
 		left:-20px;
 	}
-	#infographic-about{
-		width:330px;
-		height:60px;
-	}
-	#infographic-hackathon{
-		width:360px;
-		height:60px;
-	}
-	p#banner-subtext {
-		font-size:16px;
-		font-family:arial;
-		font-variant-caps:all-petite-caps;
-	}
 }
 
 .banner {
@@ -595,7 +520,7 @@ i {
 }
 .banner-text {
 	padding-bottom: 13%;
-	padding-top: 20%;
+	padding-top: 10%;
 }
 .banner-text h1 {
 	color: #fff;
@@ -652,17 +577,24 @@ i {
   width:50px;
   height:50px;
   display: block;
-  margin-left: auto;
+  margin-left: 0px;
   margin-top:20px;
-  margin-bottom:10px;
 }
 #socialicon-instagram{
   width:50px;
   height:50px;
   display: block;
-  margin-right: auto;
-  margin-top:20px;
-  margin-bottom:10px;
+  margin-right: 0px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#socialicon-twitter{
+  width:50px;
+  height:50px;
+  display: block;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 20px;
 }
 /* ------------------------------------------------------------------------------
 	 Intro
@@ -684,14 +616,14 @@ i {
 }
 .intro p {
 	color: #2d3033;
-	font: 18px "Arial"; 
+	font: 18px "Roboto"; 
 	font-size: 14px;
 	font-style: normal;
 	letter-spacing: 30%;
 	font-weight: 400;
 }
 .intro h3 {
-    font-family:arial;
+    font-family:Roboto;
 }
 
 /* ------------------------------------------------------------------------------
@@ -734,7 +666,7 @@ section#about{
 }
 .about p {
 	color: #2d3033;
-	font: 18px "Arial"; 
+	font: 18px "Roboto"; 
 	font-size: 14px;
 	font-style: normal;
 	letter-spacing: 30%;
@@ -759,7 +691,7 @@ section#about{
 	font-size:16px;
 }
 span.registeroptions {
-    font-family:arial;
+    font-family:Roboto;
     vertical-align: middle;
 }
 .registeroptions {
@@ -785,7 +717,7 @@ span.registeroptions {
 }
 #contact-info {
   color:white;
-  font: 12px "arial";
+  font: 12px "Roboto";
   
 }
 .contact-info-style {
@@ -821,12 +753,12 @@ section#faq{
 }
 .faq h1 {
 	color: #2d3033;
-	font: 30px "bebas";
+	font: 50px "bebas";
 	padding-bottom: 25px;
     text-align:center;
 }
 .faq p {
-	font: 14px "arial";
+	font: 14px "Roboto";
 	line-height: 15px;
 	color:black;
     text-align:center;
@@ -835,7 +767,7 @@ section#faq{
 
 .faq h2 {
 	color: black;
-	font: 10px "arial";
+	font: 10px "Roboto";
 	line-height: 15px;
 }
 
@@ -851,7 +783,7 @@ section#faq{
 
 .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
     color:black;
-    font-family:arial;
+    font-family:Roboto;
     font-size:20px;
     line-height: 25px;
 }
@@ -961,8 +893,8 @@ section#sponsorship{
 	padding-bottom: 25px;
 }
 .sponsor p {
-	color: black;
-	font: 12px "arial"; 
+	color: #2d3033;
+	font: 12px "Roboto"; 
 	font-style: normal;
 	font-weight: 400;
 	margin: 0 !important;
@@ -971,7 +903,7 @@ section#sponsorship{
 }
 
 .sponsor h2 {
-	color: black;
+	color: #2d3033;
     text-align: center;
 	font: 14px "bebas"; 
 	font-style: normal;
@@ -980,8 +912,8 @@ section#sponsorship{
 }
 
 .sponsor h3 {
-	color: black;
-	font: 30px "bebas";
+	color: #2d3033;
+	font: 50px "bebas";
 	padding-bottom: 15px;
 }
 
@@ -1002,7 +934,7 @@ a:hover#team-link {
     color: red;
 }
 .profile-img-container > div {
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 }
 
 .img-profile-size{
@@ -1032,7 +964,7 @@ section#profile{
 
 .profile h1{
     color: #2d3033;
-	font: 30px "bebas";
+	font: 50px "bebas";
 	padding-bottom: 25px;
 }
 
@@ -1064,7 +996,7 @@ section#profile{
 
 .profile p {
 	color: #2d3033;
-	font: 12px "arial"; 
+	font: 12px "Roboto"; 
 	font-style: normal;
 	font-weight: 400;
     margin: 0 0 0px;
@@ -1078,7 +1010,7 @@ section#profile{
 }
 
 .social-icons a, .footer .footer-share a {
-	border: 1px solid #e8ecee;
+	border: 1px dashed #e8ecee;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -1162,9 +1094,10 @@ section#footer{
 /* ------------------------------------------------------------------------------
 	 Event Description
 -------------------------------------------------------------------------------*/
+
 section#description{
     border-top: 10px black;
-    border-style:dashed;
+    
     border-bottom:none;
     border-right:none;
     border-left:none;
@@ -1178,11 +1111,11 @@ section#description{
 .description blockquote {
 	border: 0;
 	margin: 0;
-	padding: 50px 15% 0;
+	padding: 50px 25% 0;
 }
 .description h1 {
 	color: #2d3033;
-	font: 30px "bebas";
+	font: 50px "bebas";
 	padding-bottom: 10px;
     text-align: center;
 }
@@ -1195,7 +1128,52 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font: 18px "arial"; 
+	font: 20px "Roboto"; 
+	font-style: normal;
+	font-weight: 400;
+	padding-left:55px;
+    padding-right:55px;
+
+
+}
+
+/* ------------------------------------------------------------------------------
+	 Event Description
+-------------------------------------------------------------------------------*/
+section#subdescription{
+    border-top: 10px gray;
+    
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
+.subdescription {
+	background-color: white;
+    color:black;
+
+}
+.subdescription blockquote {
+	border: 0;
+	margin: 0;
+	padding: 50px 15% 0;
+}
+.subdescription h1 {
+	color: #2d3033;
+	font: 40px "bebas";
+	padding-bottom: 10px;
+    text-align: center;
+}
+.subdescription h2{
+  color:black;
+  padding-top:0px;
+  padding-left:20px;
+  padding-right:20px;
+  margin:0;
+}
+.subdescription p {
+	color: #2d3033;
+	font: 18px "Roboto"; 
 	font-style: normal;
 	font-weight: 400;
 
