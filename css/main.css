@@ -601,6 +601,36 @@ i {
 		font-size:16px;
 	}
 
+	#date {
+		position: absolute;
+		top:400px;
+		left:65px;
+
+	}
+
+	#come {
+		position: absolute;
+		top:450px;
+		left:65px;
+
+	}
+	.wordcloud {
+		white-space: nowrap;
+	}
+
+	a#sign {
+		position: absolute;
+		top:500px;
+		left:65px;
+		margin-top:30px;
+		white-space: wrap;
+	}
+	#arrow {
+		position: absolute;
+		top:562px;
+		left:152px;
+	}
+
 	.panel-title {
 		font-size:12px;
 	}
