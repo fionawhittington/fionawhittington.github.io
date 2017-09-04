@@ -83,18 +83,19 @@
   height: 100%;
 }
 
-.text {
-  white-space: nowrap;
-  font-size: 14px;
-  position: absolute;
+.engage-text {
+  white-space: wrap;
+  font-size: 12px;
+  font-family:"Roboto";
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom:10px;
+  margin-top:10px;
+  margin-left:20px;
   -ms-transform: translate(-50%, -50%);
-  color:black;
-  font-family:"bebas";
   letter-spacing: 2px;
+  color: #2d3033;
+  font-weight: 400;
+  text-align:left;
 }
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
@@ -559,6 +560,7 @@ i {
 @media(max-width:511px) {
 	#logo-blank{
 		width:300px;
+		height:230px;
 	}
 	#anim-text{
 		font-size:13px;
@@ -568,15 +570,41 @@ i {
 	#socialicon-facebook{
 	  width:50px;
 	  height:50px;
-	  margin-top:20px;
-	  margin-bottom:20px;
 	}
 	#socialicon-instagram{
 	  width:50px;
 	  height:50px;
-	  margin-top: 20px;
-	  margin-bottom:20px;
 	}
+	#infographic_about {
+		width:300px;
+		height:60px;
+	}
+
+	#description {
+		font-size:14px;
+	}
+
+	#hackathon_recipe_simple{
+		width:300px;
+		height:60px;
+	}
+
+	#title-responsive {
+		font-size:24px;
+	}
+
+	#expect {
+		font-size:14px;
+	}
+
+	h3 {
+		font-size:16px;
+	}
+
+	.panel-title {
+		font-size:12px;
+	}
+
 }
 
 .banner {
@@ -650,26 +678,14 @@ i {
 #socialicon-facebook{
   width:50px;
   height:50px;
-  display: block;
-  margin-left: auto;
-  margin-top:20px;
-  margin-bottom:10px;
 }
 #socialicon-instagram{
   width:50px;
   height:50px;
-  display: block;
-  margin-right: auto;
-  margin-top:20px;
-  margin-bottom:10px;
 }
 #socialicon-twitter{
   width:50px;
   height:50px;
-  display: block;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top: 20px;
 }
 /* ------------------------------------------------------------------------------
 	 Intro
@@ -967,15 +983,6 @@ section#sponsorship{
 	font: 30px "bebas";
 	padding-bottom: 25px;
 }
-.sponsor p {
-	color: #2d3033;
-	font: 12px "Roboto"; 
-	font-style: normal;
-	font-weight: 400;
-	margin: 0 !important;
-	padding: 5px;
-
-}
 
 .sponsor h2 {
 	color: #2d3033;
@@ -1002,6 +1009,19 @@ section#sponsorship{
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+.text {
+  white-space: nowrap;
+  font-size: 14px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color:black;
+  font-family:"bebas";
+  letter-spacing: 2px;
+}
 #team-link {
 	color:black;
 }
@@ -1069,14 +1089,6 @@ section#profile{
     color:#fa8dd5;
 }
 
-.profile p {
-	color: #2d3033;
-	font: 12px "Roboto"; 
-	font-style: normal;
-	font-weight: 400;
-    margin: 0 0 0px;
-
-}
 /*Centering an Image*/
 .center-block {
   display: block;
