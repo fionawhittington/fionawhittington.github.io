@@ -84,18 +84,18 @@
 }
 
 .engage-text {
-  white-space: wrap;
-  font-size: 12px;
-  font-family:"Roboto";
+  font-size: 15px;
+  font-family: "arial"; 
+  font-style: normal;
+  font-weight: 400;
   overflow: hidden;
   margin-bottom:10px;
   margin-top:10px;
   margin-left:20px;
   -ms-transform: translate(-50%, -50%);
-  letter-spacing: 2px;
-  color: #2d3033;
-  font-weight: 400;
   text-align:left;
+  white-space: wrap;
+  color: #2d3033;
 }
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
@@ -211,7 +211,7 @@ a:hover, a:focus {
 body {
 	font-family: "Roboto";
 	font-weight: 400;
-	color: #6c7279;
+	color: orange;
 }
 ul, ol {
 	margin: 0;
@@ -540,6 +540,7 @@ i {
 }
 #register15 {
 	animation-delay: 0.5s;
+	padding-left:5px;
 }
 #anim-text {
 	font-family: "bebas";
@@ -1245,7 +1246,8 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font: 20px "Roboto"; 
+	font-size: 15px; 
+	font-family: "arial";
 	font-style: normal;
 	font-weight: 400;
 	padding-left:55px;
