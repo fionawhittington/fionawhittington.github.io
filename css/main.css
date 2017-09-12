@@ -199,7 +199,7 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #ffb400;
+	color:#white;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -460,84 +460,13 @@ i {
 }
 
 @keyframes textanimation {
-	0% {color:white;}
+	0% {color:#6bd9d0;}
 	20% {color:#82dcfe;}
 	60% {color:#fa8dd5;}
 	100% {color:#6bd9d0;}  
 }
 
-#register1 {
-	top:20vh;
-	left:60vw;
-	animation-delay: 0.2s;
-}
-#register2 {
-	top:20vh;
-	left:60vw;
-	animation-delay: 0.3s;
-}
-#register3 {
-	top:20vh;
-	left:70vw;
-	animation-delay: 1.2s;
-}
-#register4 {
-	top:20vh;
-	left:80vw;
-	animation-delay: 1.5s;
-}
-#register5 {
-	top:20vh;
-	left:10vw;
-	animation-delay: 0.1s;
-}
-#register6 {
-	top:20vh;
-	left:30vw;
-	animation-delay: 0.7s;
-}
-#register7 {
-	top:20vh;
-	left:90vw;
-	animation-delay: 0.9s;
-}
 
-#register8 {
-	top:65vh;
-	left:25vw;
-	animation-delay: 1.0s;
-}
-/* Explore */
-#register9 {
-	top:82vh;
-	left:42vw;
-	animation-delay: 0.9s;
-}
-#register10 {
-	top:80vh;
-	left:70vw;
-	animation-delay: 1.2s;
-}
-#register11 {
-	top:80vh;
-	left:80vw;
-	animation-delay: 0.5s;
-}
-#register12 {
-	top:78vh;
-	left:35vw;
-	animation-delay: 0.5s;
-}
-#register13 {
-	top:78vh;
-	left:42vw;
-	animation-delay: 0.5s;
-}
-#register14 {
-	top:82vh;
-	left:38vw;
-	animation-delay: 0.5s;
-}
 #register15 {
 	animation-delay: 0.5s;
 	padding-left:5px;
@@ -606,26 +535,23 @@ i {
 		position: absolute;
 		top:400px;
 		left:65px;
-
 	}
 
 	#come {
 		position: absolute;
 		top:450px;
 		left:65px;
-
 	}
 	.wordcloud {
 		white-space: nowrap;
 	}
 
-	a#sign {
+	#sign {
 		position: absolute;
-		top:500px;
+		top: 500px;
 		left:65px;
-		margin-top:30px;
-		white-space: wrap;
 	}
+
 	#arrow {
 		position: absolute;
 		top:562px;
@@ -635,7 +561,6 @@ i {
 	.panel-title {
 		font-size:12px;
 	}
-
 }
 
 .banner {
@@ -691,7 +616,6 @@ i {
  	margin: 0 auto;
 	font-family:"bebas";
 	text-align:left;
-
 }
 
 .banner button{
@@ -700,12 +624,17 @@ i {
     background:white;
     padding:10px;
     font-size:20px;
+    left: 0;
 }
 .coreinformation {
 	margin:0 auto;
 	width:50%;
 	display:block;
 }
+.coreinforation button {
+
+}
+
 #socialicon-facebook{
   width:50px;
   height:50px;
@@ -746,6 +675,10 @@ i {
 }
 .intro h3 {
     font-family:Roboto;
+}
+
+#register-font {
+	color: #ffb400;
 }
 
 /* ------------------------------------------------------------------------------
