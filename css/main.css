@@ -461,7 +461,7 @@ i {
 	font-size:34px;
 	color:white;
 	animation: textanimation 2s ease-in-out 0s infinite;
-	font-family:"Bebas Neue";
+	font-family:"Bebas";
 }
 
 @keyframes textanimation {
