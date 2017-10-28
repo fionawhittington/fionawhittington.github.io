@@ -92,12 +92,11 @@
 }
 @media screen and (max-width: 320px) {
 .banner-text {
-	padding-top: 55%;
+	padding-top: 65%;
 }
 .testimonials blockquote {
 	padding: 20px 5% 0;
 }
 .testimonials p {
 	font-size: 14px;
-}
 }

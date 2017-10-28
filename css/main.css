@@ -84,18 +84,22 @@
 }
 
 .engage-text {
-  font-size: 15px;
+  font-size: 18px;
   font-family: "arial"; 
   font-style: normal;
   font-weight: 400;
   overflow: hidden;
-  margin-bottom:10px;
-  margin-top:10px;
+  margin-top:20px;
   margin-left:20px;
   -ms-transform: translate(-50%, -50%);
-  text-align:left;
+  text-align:center;
   white-space: wrap;
   color: #2d3033;
+}
+
+.panel-body {
+	background-color:#f3a958;
+	color:white;
 }
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
@@ -119,7 +123,7 @@
 p {
 	font-size: 14px;
 	font-family: bebas;
-	line-height: 22.4px;
+	line-height: 20px;
 	color: #6c7279;
 }
 h1 {
@@ -134,9 +138,9 @@ h2 {
 	color: white;
 }
 h3 {
-	font-size: 28px;
+	font-size: 24px;
 	color: #2d3033;
-	font-family: bebas;
+	font-family: arial;
 	font-weight: 300;
 }
 h4 {
@@ -199,7 +203,8 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color:#ffd470;
+	color:#f3a958;
+	font-weight:bold;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -453,10 +458,10 @@ i {
 }
 
 .wordcloud {
-	font-size:20px;
+	font-size:34px;
 	color:white;
-	position: absolute;
 	animation: textanimation 2s ease-in-out 0s infinite;
+	font-family:"Bebas Neue";
 }
 
 @keyframes textanimation {
@@ -486,16 +491,21 @@ i {
 #logo-blank {
 	position:relative;
 	z-index: -1;
+	left:80px;
 }
 @media(max-width:511px) {
 	#logo-blank{
 		width:300px;
 		height:230px;
+		left:-12px;
 	}
 	#anim-text{
 		font-size:13px;
 		top:177px;
 		left:-20px;
+	}
+	#video {
+		width:80%;
 	}
 	#socialicon-facebook{
 	  width:50px;
@@ -539,17 +549,20 @@ i {
 
 	#come {
 		position: absolute;
-		top:450px;
-		left:65px;
+		top:441px;
+		bottom:-5px;
+		left:7px;
 	}
 	.wordcloud {
 		white-space: nowrap;
+		position:absolute;
+		left:10px;
 	}
 
 	#sign {
 		position: absolute;
 		top: 500px;
-		left:65px;
+		left:87px;
 	}
 
 	#arrow {
@@ -571,7 +584,7 @@ i {
 	-o-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-height: 750px;
+	min-height: 580px;
 }
 .banner-btn {
 	opacity: 0.5;
@@ -581,7 +594,7 @@ i {
 	padding-top: 10%;
 }
 .banner-text h1 {
-	color: #fff;
+	color: #fdab5f;
 	font-family: "bebas";
 	font-size: 143px;
 	letter-spacing: 10px;
@@ -607,7 +620,7 @@ i {
 	text-transform: uppercase;
 }
 .banner-text p {
-	color: black;
+	color: #fad369;
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 3px;
@@ -615,7 +628,6 @@ i {
 	text-transform: uppercase;
  	margin: 0 auto;
 	font-family:"bebas";
-	text-align:left;
 }
 
 .banner button{
@@ -746,11 +758,12 @@ section#about{
 	font-size:16px;
 }
 span.registeroptions {
-    font-family:Roboto;
+    font-family:bebas;
     vertical-align: middle;
+    text-transform:uppercase;
 }
 .registeroptions {
-    color:black;
+    color:#ffd56f;
 }
 .register blockquote {
 	border: 0;
@@ -992,9 +1005,6 @@ section#sponsorship{
 a:hover#team-link {
     color: red;
 }
-.profile-img-container > div {
-	margin-bottom: 30px;
-}
 
 .img-profile-size{
     width:60%;
@@ -1024,7 +1034,6 @@ section#profile{
 .profile h1{
     color: #2d3033;
 	font: 50px "bebas";
-	padding-bottom: 25px;
 }
 
 .profile h2: {
@@ -1179,12 +1188,10 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font-size: 15px; 
+	font-size: 18px; 
 	font-family: "arial";
 	font-style: normal;
 	font-weight: 400;
-	padding-left:55px;
-    padding-right:55px;
 
 
 }
