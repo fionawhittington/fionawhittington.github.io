@@ -85,7 +85,7 @@
 
 .engage-text {
   font-size: 18px;
-  font-family: "arial"; 
+  font-family: "arial";
   font-style: normal;
   font-weight: 400;
   overflow: hidden;
@@ -105,9 +105,9 @@
 	Template Name: Flosix
 	Author: Designstub
 	Author URI: http://www.designstub.com
-	
-	
-	
+
+
+
 /* ------------------------------------------------------------------------------
 	Typography
 -------------------------------------------------------------------------------*/
@@ -239,7 +239,7 @@ ul li {
 	margin-top: 60px;
 }
 /* ------------------------------------------------------------------------------
-	Get Invovled 
+	Get Invovled
 -------------------------------------------------------------------------------*/
 #get-involved {
 	margin:40px;
@@ -468,7 +468,7 @@ i {
 	0% {color:#6bd9d0;}
 	20% {color:#82dcfe;}
 	60% {color:#fa8dd5;}
-	100% {color:#6bd9d0;}  
+	100% {color:#6bd9d0;}
 }
 
 
@@ -679,7 +679,7 @@ i {
 }
 .intro p {
 	color: #2d3033;
-	font: 18px "Roboto"; 
+	font: 18px "Roboto";
 	font-size: 14px;
 	font-style: normal;
 	letter-spacing: 30%;
@@ -733,7 +733,7 @@ section#about{
 }
 .about p {
 	color: #2d3033;
-	font: 18px "Roboto"; 
+	font: 18px "Roboto";
 	font-size: 14px;
 	font-style: normal;
 	letter-spacing: 30%;
@@ -777,7 +777,7 @@ span.registeroptions {
 }
 .register p {
 	color: #99004d;
-	font: 60px "bebas"; 
+	font: 60px "bebas";
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
@@ -786,7 +786,7 @@ span.registeroptions {
 #contact-info {
   color:white;
   font: 12px "Roboto";
-  
+
 }
 .contact-info-style {
   margin-top:20px;
@@ -875,7 +875,7 @@ section#faq{
 	text-transform: uppercase;
 }
 
-.circle 
+.circle
  {
  border-radius: 50px;
  height: 100px;
@@ -888,7 +888,7 @@ section#faq{
 
  .circle:hover {
   background-position: left bottom;
-  } 
+  }
 i{
   margin-bottom:3px;
   margin-left:2px;
@@ -964,7 +964,7 @@ section#sponsorship{
 .sponsor h2 {
 	color: #2d3033;
     text-align: center;
-	font: 14px "bebas"; 
+	font: 14px "bebas";
 	font-style: normal;
 	font-weight: 400;
 	margin: 0 !important;
@@ -1037,7 +1037,7 @@ section#profile{
 }
 
 .profile h2: {
-    
+
 }
 .person h4 {
 	font-weight: 400;
@@ -1157,7 +1157,7 @@ section#footer{
 
 section#description{
     border-top: 10px black;
-    
+
     border-bottom:none;
     border-right:none;
     border-left:none;
@@ -1188,7 +1188,7 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font-size: 18px; 
+	font-size: 18px;
 	font-family: "arial";
 	font-style: normal;
 	font-weight: 400;
@@ -1201,7 +1201,7 @@ section#description{
 -------------------------------------------------------------------------------*/
 section#subdescription{
     border-top: 10px gray;
-    
+
     border-bottom:none;
     border-right:none;
     border-left:none;
@@ -1232,8 +1232,211 @@ section#subdescription{
 }
 .subdescription p {
 	color: #2d3033;
-	font: 18px "Roboto"; 
+	font: 18px "Roboto";
 	font-style: normal;
 	font-weight: 400;
 
+}
+/*Helen's added stuff*/
+.box {
+    background: white;
+    border-radius: 6px;
+    border-style: dashed;
+    /*margin-bottom: 2em;*/
+    font-size: 1.2em;
+    overflow: hidden;
+    padding: 2em;
+}
+
+/*.resourceButtons a:hover{
+  box-shadow: 1px 1px 2px #888;
+  background: yellow;
+  padding:12px; border-radius: 20px; color:white
+}*/
+
+.btnHelen{
+  background: green;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+/*.btnHelen a{
+  color:black;
+  background: red;
+}*/
+
+.btnHelen a{
+  color: black;
+}
+
+.btnHelen a:hover{
+  /*color: #ff4081;*/
+  color: white;
+  /*background-color: lightblue;*/
+}
+
+
+.container-fluid-resources h1{
+  font-size: 3em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container-fluid-resources h2{
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color:#ff4081;
+}
+
+.container-fluid-resources h3{
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color:black;
+}
+
+.container-fluid-resources li{
+  font-size: 1.2em;
+  margin: .5em;
+  border-width: thin;
+  border-style: dashed;
+  padding: 1em;
+  text-align: center;
+  border-color: #90a4ae;
+  color:#90a4ae;
+}
+
+.container-fluid-resources li:hover{
+  font-size: 1.3em;
+  margin: .5em;
+  border-width: thick;
+  border-style: dashed;
+  padding: 1em;
+  text-align: center;
+  border-color: white;
+  background: #fc94cb;
+  color: white;
+
+}
+
+.container-fluid-resources li a:hover{ background-color: #ffd9ed; }
+
+.container-fluid-resources li a{
+  color:black;
+  display: block;
+}
+
+
+#resourceEssentials h1{
+  font-size: 3em;
+  /*padding: 1em;*/
+  /*margin: 1em;*/
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.ResourcesBanner{
+  /*COME BACK*/
+  /*background-image: url(../img/overlay.png),url(../img/shelearnsResize.jpg);*/
+  background-image: url(../img/shelearnsFull.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 710px;
+}
+
+.ResourcesBanner h1 span{
+   color: white;
+   /*letter-spacing: -1px;*/
+   background: #ec75b4;
+   /*background: rgb(0, 0, 0); /* fallback color */
+   /*background: rgba(0, 0, 0, 0.7);*/
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   padding: 10px;
+
+}
+
+.ResourcesBanner h1{
+  font-size: 6em;
+}
+
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background: #26a69a   ;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color:#00bfa5;
+    color:white;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ff4081 ;
+    color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-top: 25px;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1.2s;
+    animation: fadeEffect 1.2s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
