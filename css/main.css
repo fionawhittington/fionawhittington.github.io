@@ -1248,14 +1248,9 @@ section#subdescription{
     padding: 2em;
 }
 
-/*.resourceButtons a:hover{
-  box-shadow: 1px 1px 2px #888;
-  background: yellow;
-  padding:12px; border-radius: 20px; color:white
-}*/
 
 .btnHelen{
-  background: green;
+  background: rgba(0,0,0,.6);
   color: black;
   font-size: 20px;
   font-weight: 600;
@@ -1270,19 +1265,12 @@ section#subdescription{
   box-shadow: 3px 3px 5px #888888;
 }
 
-/*.btnHelen a{
-  color:black;
-  background: red;
-}*/
-
 .btnHelen a{
   color: black;
 }
 
 .btnHelen a:hover{
-  /*color: #ff4081;*/
   color: white;
-  /*background-color: lightblue;*/
 }
 
 
@@ -1294,11 +1282,12 @@ section#subdescription{
 
 .container-fluid-resources h2{
   font-size: 2em;
+  font-style:oblique;
   margin-top: 0;
   padding-top: 0;
   letter-spacing: 2px;
   text-align: center;
-  color:#ff4081;
+  color:#fdab5f;
 }
 
 .container-fluid-resources h3{
@@ -1311,34 +1300,39 @@ section#subdescription{
 }
 
 .container-fluid-resources li{
-  font-size: 1.2em;
-  margin: .5em;
+  font-size: 1em;
+  margin: .6em;
   border-width: thin;
   border-style: dashed;
-  padding: 1em;
+  padding: 1.2em;
   text-align: center;
   border-color: #90a4ae;
   color:#90a4ae;
+  width: 100%;
 }
 
 .container-fluid-resources li:hover{
-  font-size: 1.3em;
-  margin: .5em;
+  font-size: 1.2em;
+  margin: .3em;
   border-width: thick;
   border-style: dashed;
   padding: 1em;
   text-align: center;
   border-color: white;
-  background: #fc94cb;
+  background: #fdab5f;
   color: white;
 
 }
-
-.container-fluid-resources li a:hover{ background-color: #ffd9ed; }
+.container-fluid-resources li a:hover{
+  /*background-color: white;*/
+  font-size: 1.0em;
+  color:white;
+ }
 
 .container-fluid-resources li a{
   color:black;
   display: block;
+  font-size: 1em;
 }
 
 
@@ -1351,8 +1345,6 @@ section#subdescription{
 }
 
 .ResourcesBanner{
-  /*COME BACK*/
-  /*background-image: url(../img/overlay.png),url(../img/shelearnsResize.jpg);*/
   background-image: url(../img/shelearnsFull.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -1365,15 +1357,25 @@ section#subdescription{
 
 .ResourcesBanner h1 span{
    color: white;
-   /*letter-spacing: -1px;*/
-   background: #ec75b4;
-   /*background: rgb(0, 0, 0); /* fallback color */
-   /*background: rgba(0, 0, 0, 0.7);*/
+   background: rgba(0,0,0,.6);
    position: absolute;
    top: 20%;
    left: 50%;
    padding: 10px;
 
+}
+
+.ResourcesBanner button span{
+   color: white;
+   background: #fa8dd5;
+   position: absolute;
+   top: 38%;
+   right: 13%;
+   padding: 10px;
+   font-family: bebas;
+   font-size: 1.5em;
+   box-shadow: 3px 3px 5px #888888;
+   border-radius: 10px;
 }
 
 .ResourcesBanner h1{
@@ -1413,7 +1415,7 @@ div.tab button:hover {
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    background-color: #ff4081 ;
+    background-color: #fdab5f ;
     color:white;
 }
 
