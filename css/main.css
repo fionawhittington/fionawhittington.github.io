@@ -545,6 +545,7 @@ i {
 	}
 
   /*MOBILE RESPONSIVENESS HELEN*/
+    /**/
   @media screen and (max-width: 480px){#date{display:none;}}
   @media screen and (max-width: 480px){#sheLearnsHeader{display:none;}}
   /*@media screen and (max-width: 480px){#altResourcesButton{display:block;}}*/
