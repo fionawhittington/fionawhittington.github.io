@@ -118,11 +118,14 @@
   src: url('bebas.ttf');
 }
 
-
+body p {
+    font-family: 'Barlow', sans-serif;
+}
 
 p {
 	font-size: 14px;
 	font-family: bebas;
+  /*font-family: 'Barlow', sans-serif;*/
 	line-height: 20px;
 	color: #6c7279;
 }
@@ -541,11 +544,25 @@ i {
 		font-size:16px;
 	}
 
-	#date {
-		position: absolute;
-		top:400px;
-		left:65px;
-	}
+  /*MOBILE RESPONSIVENESS HELEN*/
+  @media screen and (max-width: 480px){#date{display:none;}}
+  @media screen and (max-width: 480px){#sheLearnsHeader{display:none;}}
+  /*@media screen and (max-width: 480px){#altResourcesButton{display:block;}}*/
+  @media screen and (min-width: 481px){#altResourcesButton{display:none;}}
+  @media screen and (min-width: 481px){.altResourcesButton{display:none;}}
+
+  @media screen and (max-width: 480px){#homePageButton{display:none;}}
+  @media screen and (min-width: 481px){#homePageButton{display:block;}}
+  /*@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+    #altResourcesButton {display: block;}
+}*/
+
+
+  /*.coreinformation h1{
+    font-size: 1em;
+  }*/
 
 	#come {
 		position: absolute;
@@ -710,7 +727,7 @@ i {
 	margin-left:15px;
 	margin-right:15px;
 }
-section#about{
+section#about, #whatIsAHackathon, #whatToExpect{
     border-top: 10px black;
     border-style:dashed;
     border-bottom:none;
@@ -1189,7 +1206,7 @@ section#description{
 .description p {
 	color: #2d3033;
 	font-size: 18px;
-	font-family: "arial";
+	font-family: 'Barlow', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 
@@ -1273,6 +1290,60 @@ section#subdescription{
   color: white;
 }
 
+/*.altResourcesButton{
+  color: white;
+  background: #fa8dd5;
+  position: absolute;
+  padding: 2px;
+  top: 5%;
+  right:0%;
+  width: 60%;
+  font-family: bebas;
+  font-size: 1.4em;
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 10px;
+
+}*/
+
+#altResourcesButton{
+  color: white;
+  background: #fa8dd5;
+  position: absolute;
+  padding: 2px;
+  top: 5%;
+  right:0%;
+  width: 60%;
+  font-family: bebas;
+  font-size: 1.4em;
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 10px;
+
+}
+#descriptiontop, #descriptionlower{
+  color:black;
+  border: 10px;
+  border-color: white;
+  background: #82dcfe;
+  border-style: dashed;
+  border-width: .3em;
+  font-family: 'Barlow', sans-serif;
+  padding: 2%;
+  width: 80%;
+}
+
+#descriptiontop h2{
+  font-family: 'Barlow', sans-serif;
+  font-size: 2em;
+}
+
+#descriptiontop ul li{
+  list-style-type:square;
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1.5em;
+  padding-left: 5%;
+}
+
 
 .container-fluid-resources h1{
   font-size: 3em;
@@ -1282,7 +1353,7 @@ section#subdescription{
 
 .container-fluid-resources h2{
   font-size: 2em;
-  font-style:oblique;
+  /*font-style:oblique;*/
   margin-top: 0;
   padding-top: 0;
   letter-spacing: 2px;
@@ -1338,8 +1409,6 @@ section#subdescription{
 
 #resourceEssentials h1{
   font-size: 3em;
-  /*padding: 1em;*/
-  /*margin: 1em;*/
   margin-top: 0;
   padding-top: 0;
 }
@@ -1353,6 +1422,7 @@ section#subdescription{
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 710px;
+  width: 100%;
 }
 
 .ResourcesBanner h1 span{
@@ -1376,6 +1446,19 @@ section#subdescription{
    font-size: 1.5em;
    box-shadow: 3px 3px 5px #888888;
    border-radius: 10px;
+}
+
+.ResourcesBanner button{
+  color: white;
+  background: #fa8dd5;
+  position: absolute;
+  top: 38%;
+  right: 13%;
+  padding: 8px;
+  font-family: bebas;
+  font-size: 2.2em;
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 10px;
 }
 
 .ResourcesBanner h1{
