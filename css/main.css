@@ -84,8 +84,8 @@
 }
 
 .engage-text {
-  font-size: 18px;
-  font-family: "arial";
+  font-size: 1.2em;
+  font-family: "Barlow",sans-serif;;
   font-style: normal;
   font-weight: 400;
   overflow: hidden;
@@ -100,6 +100,8 @@
 .panel-body {
 	background-color:#f3a958;
 	color:white;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1em;
 }
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
@@ -123,7 +125,7 @@ body p {
 }
 
 p {
-	font-size: 14px;
+	font-size: 1.2em;
 	font-family: bebas;
   /*font-family: 'Barlow', sans-serif;*/
 	line-height: 20px;
@@ -299,7 +301,7 @@ ul li {
 }
 .navigation a {
 	color: rgba(255, 255, 255, 0.75);
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	font-family: bebas;
 	margin-left: 40px;
@@ -474,7 +476,87 @@ i {
 	100% {color:#6bd9d0;}
 }
 
+#wordcloudGoogle{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationGoogle 2.5s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+@keyframes textanimationGoogle{
+  0% {color:#3cba54;}
+  30% {color:#db3236;}
+  60% {color:#4885ed;}
+  100% {color:#f4c20d;}
+}
 
+#wordcloudFacebook{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationFacebook 2.3s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationFacebook{
+  0% {color:#82dcfe;}
+  35% {color:#3b5998;}
+  60% {color:#3b5998;}
+  100% {color:#82dcfe;}
+}
+#wordcloudRedhat{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationRedhat 2s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationRedhat{
+  0% {color:#ff5252;}
+  20% {color:#d32f2f ;}
+  60% {color:#37474f ;}
+  100% {color:#ff5252;}
+}
+
+#wordcloudBloomberg{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationBloomberg 2s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationBloomberg{
+  0% {color: #2800D7;}
+  50% {color:#6485FD ;}
+  60% {color:#6485FD ;}
+  100% {color: #2800D7;}
+}
+
+#wordcloudJPMorgan{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationJPMorgan 1.5s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationJPMorgan{
+  0% {color: #154C8A;}
+  40% {color:#154C8A;}
+  60% {color:black;}
+  100% {color: #154C8A;}
+}
+
+#wordcloudWashington{
+  /*font-size: 65px;*/
+  color:white;
+  animation: textanimationWashington 1.5s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationWashington{
+  0% {color: #19A0C4;}
+  50% {color:#3B58B8;}
+  60% {color:#3B58B8;}
+  100% {color: #19A0C4;}
+}
 #register15 {
 	animation-delay: 0.5s;
 	padding-left:5px;
@@ -536,6 +618,11 @@ i {
 		font-size:24px;
 	}
 
+  .title-responsive {
+    font-size: 1.1em;
+    font-family: "bebas",sans-serif;
+  }
+
 	#expect {
 		font-size:14px;
 	}
@@ -548,7 +635,6 @@ i {
     /**/
   @media screen and (max-width: 480px){#date{display:none;}}
   @media screen and (max-width: 480px){#sheLearnsHeader{display:none;}}
-  /*@media screen and (max-width: 480px){#altResourcesButton{display:block;}}*/
   @media screen and (min-width: 481px){#altResourcesButton{display:none;}}
   @media screen and (min-width: 481px){.altResourcesButton{display:none;}}
 
@@ -571,17 +657,21 @@ i {
 		bottom:-5px;
 		left:7px;
 	}
-	.wordcloud {
+	/*.wordcloud {
 		white-space: nowrap;
 		position:absolute;
 		left:10px;
-	}
+	}*/
 
 	#sign {
 		position: absolute;
 		top: 500px;
 		left:87px;
 	}
+
+  #sign:hover{
+    background: red;
+  }
 
 	#arrow {
 		position: absolute;
@@ -839,9 +929,9 @@ section#faq{
 }
 .faq h1 {
 	color: #2d3033;
-	font: 50px "bebas";
+	/*font: 3.5em "bebas";*/
 	padding-bottom: 25px;
-    text-align:center;
+  text-align:center;
 }
 .faq p {
 	font: 14px "Roboto";
@@ -975,7 +1065,7 @@ section#sponsorship{
 }
 .sponsor h1 {
 	color: black;
-	font: 30px "bebas";
+	/*font: 30px "bebas";*/
 	padding-bottom: 25px;
 }
 
@@ -990,7 +1080,7 @@ section#sponsorship{
 
 .sponsor h3 {
 	color: #2d3033;
-	font: 50px "bebas";
+	/*font: 50px "bebas";*/
 	padding-bottom: 15px;
 }
 
@@ -1019,9 +1109,12 @@ section#sponsorship{
 }
 #team-link {
 	color:black;
+  font-family: "Barlow",sans-serif;
+  font-weight:bold;
+  font-size: 1.4em;
 }
 a:hover#team-link {
-    color: red;
+    color: #82dcfe;
 }
 
 .img-profile-size{
@@ -1051,7 +1144,7 @@ section#profile{
 
 .profile h1{
     color: #2d3033;
-	font: 50px "bebas";
+	/*font: 50px "bebas";*/
 }
 
 .profile h2: {
@@ -1193,7 +1286,7 @@ section#description{
 }
 .description h1 {
 	color: #2d3033;
-	font: 50px "bebas";
+	/*font: 3.5em "bebas";*/
 	padding-bottom: 10px;
     text-align: center;
 }
@@ -1206,7 +1299,7 @@ section#description{
 }
 .description p {
 	color: #2d3033;
-	font-size: 18px;
+	font-size: 1.2em;
 	font-family: 'Barlow', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -1324,7 +1417,7 @@ section#subdescription{
   color:black;
   border: 10px;
   border-color: white;
-  background: #82dcfe;
+  background: #FFD46F;
   border-style: dashed;
   border-width: .3em;
   font-family: 'Barlow', sans-serif;
@@ -1462,6 +1555,19 @@ section#subdescription{
   border-radius: 10px;
 }
 
+.ResourcesBanner button:hover{
+  color: white;
+  background: #82dcfe;
+  position: absolute;
+  top: 38%;
+  right: 13%;
+  padding: 8px;
+  font-family: bebas;
+  font-size: 2.2em;
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 10px;
+}
+
 .ResourcesBanner h1{
   font-size: 6em;
 }
@@ -1525,4 +1631,97 @@ div.tab button.active {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/*SPONSORS*/
+
+section#sponsors{
+    border-top: 10px black;
+    border-style:dashed;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+    margin-bottom: 3%;
+}
+
+.sponsor-logo{
+  width:65%;
+  padding:1em;
+}
+
+.sponsor-text{
+  font-size: 4.3em;
+  text-align: center;
+  padding-top: .4em;
+  margin-top: 0;
+}
+
+.sponsor-row{
+  margin: .2em;
+  text-align: center;
+  display: block;
+  padding-bottom: 3%;
+  max-width: 100vw;
+}
+
+.sponsor-plain{
+  font-family: "Barlow",sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+/*SPONSOR MOBILE RESPONSIVE*/
+
+@media screen and (min-width:0px){
+  .panel-default{
+    border-color: white;
+  }
+}
+
+/*ONLY SHOW ON PHONE SCREENS*/
+@media screen and (max-width:480px){
+  .sponsor-logo{
+    max-width: 80vw;
+    /*width:90vw;*/
+    padding-bottom: 3em;
+  }
+
+  .panel-group{
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .title-responsive{
+    font-size: 2em;
+  }
+  .sponsor-text{
+    font-size: 2.5em;
+  }
+
+  a#team-link{
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: .7em;
+  }
+  h2.sponsor-plain{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:1500px){
+  #date-mobile{
+    display: none;
+  }
+  #date-mobilee{
+    display: none;
+  }
+}
+
+#date-mobilee{
+  font-size: .4em;
+  /*letter-spacing: 1px;*/
+  text-align: center;
 }
