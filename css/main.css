@@ -1635,7 +1635,7 @@ div.tab button.active {
 
 /*SPONSORS*/
 
-section#sponsors{
+section#s{
     border-top: 10px black;
     border-style:dashed;
     border-bottom:none;
@@ -1644,19 +1644,19 @@ section#sponsors{
     margin-bottom: 3%;
 }
 
-.sponsor-logo{
+.s-logo{
   width:65%;
   padding:1em;
 }
 
-.sponsor-text{
+.s-text{
   font-size: 4.3em;
   text-align: center;
   padding-top: .4em;
   margin-top: 0;
 }
 
-.sponsor-row{
+.s-row{
   margin: .2em;
   text-align: center;
   display: block;
@@ -1664,7 +1664,7 @@ section#sponsors{
   max-width: 100vw;
 }
 
-.sponsor-plain{
+.s-plain{
   font-family: "Barlow",sans-serif;
   font-weight: bold;
   color: black;
@@ -1682,7 +1682,7 @@ section#sponsors{
 
 /*ONLY SHOW ON PHONE SCREENS*/
 @media screen and (max-width:480px){
-  .sponsor-logo{
+  .s-logo{
     max-width: 80vw;
     /*width:90vw;*/
     padding-bottom: 3em;
@@ -1696,7 +1696,7 @@ section#sponsors{
   .title-responsive{
     font-size: 2em;
   }
-  .sponsor-text{
+  .s-text{
     font-size: 2.5em;
   }
 
@@ -1706,7 +1706,7 @@ section#sponsors{
   h2{
     font-size: .7em;
   }
-  h2.sponsor-plain{
+  h2.s-plain{
     font-size: 1.5em;
   }
 }
