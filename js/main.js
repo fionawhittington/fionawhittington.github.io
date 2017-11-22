@@ -66,4 +66,15 @@ $(document).ready(function() {
 
 	animateWords(); //RunOnce
 	setInterval(function(){animateWords()},1800); //thenrepeat
+
+
+	//expand and shrink functionality
+	var moreText = "+ See more",
+    	lessText = "- See less",
+    	moreButton = $("a.readmorebtn");
+
+	moreButton.click(function () {
+    	var $this = $(this);
+    	$this.text($this.text() == moreText ? lessText : moreText).next("div.more").slideToggle("fast");
+	});
 });

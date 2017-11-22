@@ -1725,3 +1725,14 @@ section#s{
   /*letter-spacing: 1px;*/
   text-align: center;
 }
+
+/*expand collapse functionality*/
+div.more {
+    display:none;
+}
+a.readmorebtn {
+    cursor:pointer;
+}
+a.readmorebtn:hover {
+    border-bottom:1px black solid;
+}
