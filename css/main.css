@@ -691,9 +691,11 @@ i {
 	}*/
 
 	#sign {
-		position: absolute;
+    margin-left: 20%
+    margin-right:20%
+		/*position: absolute;*/
 		top: 500px;
-		left:87px;
+		/*left:87px;*/
 	}
 
   #sign:hover{
@@ -1715,6 +1717,9 @@ section#s{
     padding-bottom: 3em;
   }
 
+.wrapper_sign{
+  margin-top: 40%;
+}
   .panel-group{
     margin-bottom: 20px;
     margin-left: 0px;
@@ -1748,7 +1753,7 @@ section#s{
 }
 
 #date-mobilee{
-  font-size: .4em;
+  font-size: .6em;
   /*letter-spacing: 1px;*/
   text-align: center;
 }
