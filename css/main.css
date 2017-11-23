@@ -101,7 +101,7 @@
 	background-color:#f3a958;
 	color:white;
   font-family: 'Barlow', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 /* ------------------------------------------------------------------------------
 	Template Name: Flosix
@@ -556,6 +556,33 @@ i {
   50% {color:#3B58B8;}
   60% {color:#3B58B8;}
   100% {color: #19A0C4;}
+}
+
+#wordcloudQ{
+  color:white;
+  animation: textanimationQ 2.5s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationQ{
+  0% {color: #D6001C;}
+  50% {color:#147BD1;}
+  60% {color:#464E7E;}
+  100% {color: #D6001C;}
+}
+
+
+#wordcloudCBRE{
+  color:white;
+  animation: textanimationCBRE 2.5s ease-in-out 0s infinite;
+  font-family:"Bebas";
+}
+
+@keyframes textanimationCBRE{
+  0% {color: #006A4D;}
+  50% {color:#69BE28;}
+  60% {color:#69BE28;}
+  100% {color: #006A4D;}
 }
 #register15 {
 	animation-delay: 0.5s;
@@ -1711,7 +1738,7 @@ section#s{
   }
 }
 
-@media screen and (min-width:500px) and (max-width:1500px){
+@media screen and (min-width:500px) and (max-width:3000px){
   #date-mobile{
     display: none;
   }
