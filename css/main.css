@@ -1670,7 +1670,7 @@ section#s{
     border-bottom:none;
     border-right:none;
     border-left:none;
-    margin-bottom: 3%;
+    margin-bottom: 16%;
 }
 
 .s-logo{
@@ -1716,6 +1716,10 @@ section#s{
     /*width:90vw;*/
     padding-bottom: 3em;
   }
+
+#profile{
+  display: none;
+}
 
 .wrapper_sign{
   margin-top: 40%;
