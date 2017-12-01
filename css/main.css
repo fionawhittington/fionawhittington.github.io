@@ -1981,6 +1981,7 @@ a.readmorebtn {
 a.readmorebtn:hover {
   border-bottom: 1px black solid;
 }
+/*end expand collapse*/
 
 p.story-quote {
   font-size: 1.7em;
@@ -1996,6 +1997,15 @@ p.story-body {
 }
 
 section#stories {
+  border-top: 10px black;
+  border-style: dashed;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+/****  KEYNOTES  ****/
+section#keynotes{
   border-top: 10px black;
   border-style: dashed;
   border-bottom: none;
