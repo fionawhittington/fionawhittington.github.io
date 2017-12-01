@@ -1925,6 +1925,9 @@ section#s {
   #profile {
     display: none;
   }
+  #keynotes{
+    display: none;
+  }
 
   #aboutdiv{
       margin-bottom: -170px;
@@ -1950,6 +1953,13 @@ section#s {
   }
   h2.s-plain {
     font-size: 1.5em;
+  }
+
+  #stories{
+    margin-bottom: 20%;
+  }
+  #reg{
+    margin-bottom: 3em;
   }
 }
 
