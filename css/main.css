@@ -850,6 +850,10 @@ i {
     #date {
       display: none;
     }
+
+    #resourcesmenuhide{
+      display: none;
+    }
   }
   @media screen and (max-width: 480px) {
     #sheLearnsHeader {
