@@ -2084,3 +2084,43 @@ text-transform: uppercase;
 font-size: 22px;
 margin-top: 1em;
 }
+
+
+/*CHALLENGES PAGE STYLING*/
+#challengesbanner{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 4%;
+  border-bottom: 10px black dashed;
+}
+
+#challengestitle{
+  padding-top: 3%;
+  max-width: 80%;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+#challengestitle p{
+  font-family: 'Barlow';
+}
+
+#challengeslogo{
+  max-width: 70%;
+  position: relative;
+}
+
+#challengesrow h1{
+  font-family: 'Barlow';
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+#challengesrow .col-md-6{
+  width:50%;
+  padding-left: 5%;
+}
+
+.challengepicture{
+  max-width: 100%;
+}
