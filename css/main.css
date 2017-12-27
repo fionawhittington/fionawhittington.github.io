@@ -2107,3 +2107,46 @@ text-transform: uppercase;
 font-size: 22px;
 margin-top: 1em;
 }
+
+/*tabs for schedule days*/
+/* Style the tab */
+.daytab {
+    overflow: hidden;
+    background-color: #000000;
+    padding-left: 10%;
+    width:33%;
+    font-family: bebas;
+}
+
+/* Style the buttons inside the tab */
+.daytab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:white;
+}
+
+/* Change background color of buttons on hover */
+.daytab button:hover {
+    background-color: #fff;
+    color:black;
+}
+
+/* Create an active/current tablink class */
+.daytab button.active {
+    background-color: #fff;
+    color:black;
+}
+
+/* Style the tab content */
+.daytabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-top: none;
+}
