@@ -2187,12 +2187,55 @@ margin-top: 1em;
     padding: .2em;
 }*/
 
-#challengeimages .col-md-3 img{
-  max-width: 95%;
+.challengegraphic{
+  max-width: 55%;
   padding-top:28px;
+  margin-left: 10px;
 }
 
 #challengeimages{
   padding-bottom: 3em;
   border-bottom: 10px black dashed;
+}
+
+.col-md-4.suggestion{
+  margin-top: 1em;
+  /*padding: 1.5em;*/
+  font-size: 1.2em;
+  /*padding-right: 3em;*/
+  max-width: 80%;
+}
+
+.col-md-4.prize{
+  margin-top: 1em;
+  /*padding: 2em;*/
+  font-size: 1.4em;
+  /*color: black;*/
+}
+.col-md-4.prize p{
+  /*color: black;*/
+  line-height: 1em;
+  max-width:80%;
+}
+
+.row.challengerow{
+  margin-left: 15px;
+}
+
+.row.challengerow h1{
+  font-family: "Barlow";
+  font-size: 3em;
+}
+
+.prizeimage{
+  border-radius: 50%;
+  max-width:180px;
+  margin-top: 8px;
+}
+.prizeimage.green{
+  border: #C1F881 8px solid;
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
 }
