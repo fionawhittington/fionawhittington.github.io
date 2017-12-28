@@ -1872,8 +1872,8 @@ section#subdescription {
 
 div.tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
+  /*border: 1px solid #ccc;
+  background-color: #f5f5f5;*/
 }
 
 /* Style the buttons inside the tab */
