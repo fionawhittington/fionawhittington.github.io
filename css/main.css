@@ -2201,9 +2201,13 @@ margin-top: 1em;
 .col-md-4.suggestion{
   margin-top: 1em;
   /*padding: 1.5em;*/
-  font-size: 1.2em;
+  font-size: 1.3em;
   /*padding-right: 3em;*/
   max-width: 80%;
+}
+
+.col-md-4.suggestion p{
+  line-height: 1.3em;
 }
 
 .col-md-4.prize{
@@ -2213,7 +2217,6 @@ margin-top: 1em;
   /*color: black;*/
 }
 .col-md-4.prize p{
-  /*color: black;*/
   line-height: 1.2em;
   max-width:95%;
 }
@@ -2229,11 +2232,27 @@ margin-top: 1em;
 
 .prizeimage{
   border-radius: 50%;
-  max-width:180px;
+  max-width:40%;
   margin-top: 8px;
+  /*margin-bottom: 10px;*/
 }
 .prizeimage.green{
   border: #C1F881 8px solid;
+}
+.prizeimage.pink{
+  border: #fa8dd5 8px solid;
+}
+
+.prizeimage.blue{
+  border:  #82dcfe 8px solid;
+}
+
+.prizeimage.orange{
+  border: #FFD46F 8px solid;
+}
+
+.prizeimage.teal{
+  border: #6bd9d0 8px solid;
 }
 
 hr.style1{
