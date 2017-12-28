@@ -2150,3 +2150,49 @@ margin-top: 1em;
     border: 1px solid #fff;
     border-top: none;
 }
+
+/*CHALLENGES PAGE STYLING*/
+
+/*#challengesbanner{
+  padding-top: 15%;
+  text-align: center;
+  background-image: url(../img/challengeheader.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+  max-width: 100%;
+  padding-bottom: 5%;
+  font-size: 1.7em;
+  overflow: hidden;
+}*/
+
+.header{
+  max-width: 100%;
+  padding-top: 50px;
+}
+
+#challengesbanner h1{
+  color:black;
+  /*text-shadow: 2.5px 4.3px white;*/
+  font-size: 3em;
+  /*background: rgba(0,0,0,.8);*/
+}
+
+/*#challengesbanner h1 span, #challengesbanner p span{
+    background: rgba(0,0,0,.7);
+    padding: .2em;
+}*/
+
+#challengeimages .col-md-3 img{
+  max-width: 95%;
+  padding-top:28px;
+}
+
+#challengeimages{
+  padding-bottom: 3em;
+  border-bottom: 10px black dashed;
+}
