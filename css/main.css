@@ -2214,8 +2214,8 @@ margin-top: 1em;
 }
 .col-md-4.prize p{
   /*color: black;*/
-  line-height: 1em;
-  max-width:80%;
+  line-height: 1.2em;
+  max-width:95%;
 }
 
 .row.challengerow{
