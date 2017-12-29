@@ -975,14 +975,14 @@ i {
 }
 
 .banner-text p {
-  color: #fad369;
-  font-size: 20px;
+  color: black;
+  font-size: 1.5em;
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 0 auto;
-  font-family: "bebas";
+  margin: auto;
+  font-family: "Barlow";
 }
 
 .banner button {
@@ -2122,17 +2122,18 @@ section#keynotes{
 
 a.sign:hover{
   background: #82dcfe;
-  color:dark-slate-grey;
+  color:black;
 }
 
 .sign{
-  box-shadow: 3px 4px 10px #888; background: #fdab5f; margin-top:1em;
-  padding:16px; border-radius: 10px; color:white; font-family: 'bebas';
-  letter-spacing: 3px;
+  box-shadow: 3px 4px 10px #888; background: #C1F881;
+  padding:16px; border-radius: 10px; color:black; font-family: 'Barlow';
+  letter-spacing: 2px;
 line-height: 24px;
 text-transform: uppercase;
 font-size: 22px;
-margin-top: 1em;
+margin-top: 10em;
+font-weight: bold;
 }
 
 /*tabs for schedule days*/
