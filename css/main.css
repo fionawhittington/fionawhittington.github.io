@@ -2004,6 +2004,7 @@ section#s {
     /*width:90vw;*/
     padding-bottom: 3em;
   }
+
   #profile {
     display: none;
   }
@@ -2054,6 +2055,10 @@ section#s {
 
 @media screen and (min-width:500px) and (max-width:3000px) {
   #date-mobile {
+    display: none;
+  }
+
+  #challengeMobileMenu{
     display: none;
   }
   #date-mobilee {
@@ -2291,5 +2296,5 @@ hr.style1{
   font-size: .6em;
   border-bottom: 7px dashed #fa8dd5;
   text-align: center;
-  max-width: 85%;
+  max-width: 91%;
 }
