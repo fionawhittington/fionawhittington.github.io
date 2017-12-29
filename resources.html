@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
@@ -41,14 +42,22 @@
   <header id="header-resources">
     <div class="header-content clearfix">
       <!-- <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a> -->
-
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#s">Sponsors</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
           <!-- <li><a href="#sponsorship">Get Involved</a></li> -->
-          <li><a href="resources.html">Hacker Resources</a></li>
+          <li id="resourcesmenuhide">
+            <div class="dropdownNav">
+              <a href="">Resources</a><i class="fas fa-angle-down" style="color:white;border:none;"></i>
+              <div class="dropdownNav-content" style="left:40px">
+                <p><a href="resources.html" style="color:black;margin-left:0px;">Tools &amp; Tutorials</a></p>
+                <!-- <hr class="style1"> -->
+                <!-- <p><a href="challenges.html" style="color:black;margin-left:0px;">Challenges</a></p> -->
+              </div>
+            </div>
+          </li>
           <li><a href="https://bu-spark.typeform.com/to/LOXa1I" target="_blank">Attend</a></li>
           <li><a href="mailto:info@shehacks.io">Contact</a></li>
         </ul>

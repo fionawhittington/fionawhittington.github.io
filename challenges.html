@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
@@ -46,13 +47,22 @@
   <header id="header-resources">
     <div class="header-content clearfix">
       <!-- <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a> -->
-
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#s">Sponsors</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="resources.html">Hacker Resources</a></li>
+          <!-- <li><a href="#sponsorship">Get Involved</a></li> -->
+          <li id="resourcesmenuhide">
+            <div class="dropdownNav">
+              <a href="">Resources</a><i class="fas fa-angle-down" style="color:white;border:none;"></i>
+              <div class="dropdownNav-content" style="left:40px">
+                <p><a href="resources.html" style="color:black;margin-left:0px;">Tools &amp; Tutorials</a></p>
+                <hr class="style1">
+                <p><a href="challenges.html" style="color:black;margin-left:0px;">Challenges</a></p>
+              </div>
+            </div>
+          </li>
           <li><a href="https://bu-spark.typeform.com/to/LOXa1I" target="_blank">Attend</a></li>
           <li><a href="mailto:info@shehacks.io">Contact</a></li>
         </ul>
@@ -62,7 +72,10 @@
   <!--header navigation -->
 
 <div >
-<img src="img/challengeheader.png" alt="" class="header">
+<img src="img/challengeheader.png" alt="" class="header" id="sheSolvesimage">
+</div>
+<div >
+<img src="img/challengeheaderMobile.png" alt="" class="header" id="challengeMobileHeader">
 </div>
 
 <!-- <div class="row" id="challengeimages">
@@ -88,7 +101,7 @@
   </div>
 </div> -->
 
-<div class="row challengerow">
+<div class="row challengerow" id="challengecolumntitles">
   <div class="col-md-4">
     <h1>Category</h1> <hr class="style1">
   </div>
@@ -98,6 +111,9 @@
   <div class="col-md-4">
     <h1>Suggestions</h1> <hr class="style1">
   </div>
+</div>
+<div class="row challengerow" id="categoryDescriptionMobile">
+<h1>Each category below is presented with its name, its prize, and information on how hacks can qualify.</h1>
 </div>
 <div class="row challengerow">
   <div class="col-md-4">
@@ -125,7 +141,8 @@
     <p>Create a solution for your neighborhood that reduces a waste of your choice. </p> <br>
     <p>Create a solution that helps individuals and communities prepare for and adapt to the impacts of climate change.</p>
   </div>
-</div> <hr>
+</div>
+<hr>
 <div class="row challengerow">
   <div class="col-md-4">
     <img src="img/challenges/political.png" alt="political challenge" class="challengegraphic">
@@ -169,28 +186,57 @@
 <hr>
 <div class="row challengerow">
  <div class="col-md-4">
-   <img src="img/challenges/smiles.png" alt="she smiles challenge" class="challengegraphic">
+   <img src="img/challenges/smiles.png" alt="she smiles category" class="challengegraphic">
  </div>
  <div class="col-md-4 prize">
  <p>6 Polaroid Cameras</p>
  <img src="img/prizes/camera.png" alt="" class="prizeimage orange">
  </div>
  <div class="col-md-4 suggestion">
-   <p>Fun category for the team with the most heart-warming hack!</p>
+   <p>Most heart-warming hack award! <br>For the team that presents the most heart-warming hack.</p>
  </div>
 </div>
 <hr>
 <div class="row challengerow">
  <div class="col-md-4">
-   <img src="img/challenges/learns.png" alt="she learns challenge" class="challengegraphic">
+   <img src="img/challenges/learns.png" alt="she learns category" class="challengegraphic">
  </div>
  <div class="col-md-4 prize">
  <p>A surprise from Make School!</p>
  <img src="img/prizes/gift.png" alt="" class="prizeimage green">
+</div>
+ <div class="col-md-4 suggestion">
+      <p>Beginner Hack Award! <br>For the beginner team (where at least half of team members have never attended a hackathon before) with most ambitous hack.</p>
+ </div>
+</div> <hr>
+<div class="row challengerow">
+ <div class="col-md-4">
+   <img src="img/challenges/inspires.png" alt="she inspires category" class="challengegraphic">
+ </div>
+ <div class="col-md-4 prize">
+ <p>A surprise from Make School!</p>
+ <img src="img/prizes/gift.png" alt="" class="prizeimage orange">
  </div>
  <div class="col-md-4 suggestion">
-   <p>Beginner Hack Award! <br>For the beginner team (at least half of members have never attended a hackathon before) with most ambitous hack.</p>
+      <p>Best High School Hack Award! <br>For the high school team with the most impressive hack.</p>
  </div>
+</div>
+<hr>
+<div class="row challengerow">
+ <div class="col-md-4">
+   <img src="img/companies/google-logo.png" alt="google sponsor category" class="challengegraphic" style="max-width:85%; margin-left:0; padding-left:0">
+ </div>
+ <div class="col-md-4 prize">
+ <p>6 Google Homes - Smart Speaker &amp; Home Assistant</p>
+ <img src="img/prizes/googlehome.jpg" alt="" class="prizeimage blue">
+ </div>
+ <div class="col-md-4 suggestion">
+      <p>Google Cloud Platform Award! <br>For the team with the best use of the Google Cloud Platform.</p>
+ </div>
+</div> <br>
+<div class="row challengerow" style="text-align:center;" id="challengebottom">
+  <h1>...and many more challenges &amp; prizes to come!</h1>
+  <p>We will release judging criteria and more specific details closer to the event.</p>
 </div>
 
 

@@ -851,6 +851,15 @@ i {
       display: none;
     }
 
+    #challengecolumntitles{
+      display: none;
+    }
+
+    #challengebottom{
+      font-size: .8em;
+      max-width: 88%;
+    }
+
     #resourcesmenuhide{
       display: none;
     }
@@ -2002,6 +2011,10 @@ section#s {
     display: none;
   }
 
+  #sheSolvesimage{
+    display: none;
+  }
+
 #whatIsAHackathon{
   display:none;
 }
@@ -2044,6 +2057,14 @@ section#s {
     display: none;
   }
   #date-mobilee {
+    display: none;
+  }
+
+  #categoryDescriptionMobile{
+    display:none;
+  }
+
+  #challengeMobileHeader{
     display: none;
   }
 }
@@ -2263,4 +2284,11 @@ margin-top: 1em;
 
 hr.style1{
 	border-top: 1px solid #8c8b8b;
+}
+
+#categoryDescriptionMobile{
+  font-size: .6em;
+  border-bottom: 7px dashed #fa8dd5;
+  text-align: center;
+  max-width: 85%;
 }
