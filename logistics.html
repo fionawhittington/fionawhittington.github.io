@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -36,20 +37,29 @@
 
 </head>
 
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black"
+  target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 
 <body>
   <header id="header-resources">
     <div class="header-content clearfix">
       <!-- <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a> -->
-
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#s">Sponsors</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
           <!-- <li><a href="#sponsorship">Get Involved</a></li> -->
-          <li><a href="resources.html">Hacker Resources</a></li>
+          <li id="resourcesmenuhide">
+            <div class="dropdownNav">
+              <a href="">Resources</a><i class="fas fa-angle-down" style="color:white;border:none;"></i>
+              <div class="dropdownNav-content" style="left:40px">
+                <p><a href="resources.html" style="color:black;margin-left:0px;">Tools &amp; Tutorials</a></p>
+                <hr class="style1">
+                <p><a href="challenges.html" style="color:black;margin-left:0px;">Prizes</a></p>
+              </div>
+            </div>
+          </li>
           <li><a href="https://bu-spark.typeform.com/to/LOXa1I" target="_blank">Attend</a></li>
           <li><a href="mailto:info@shehacks.io">Contact</a></li>
         </ul>
@@ -72,7 +82,7 @@
 
 
 <div id="schedule">
-  <h1 style="padding-left: 10%;padding-bottom:30px;">TENTATIVE SCHEDULE</h1>
+  <h1 style="padding-left: 10%;padding-bottom:30px;font-family:'Barlow';">Tentative Schedule</h1>
   <div class="daytab">
     <button class="tablinks" onclick="openDay(event, 'Friday')" id="defaultOpen">Friday</button>
     <button class="tablinks" onclick="openDay(event, 'Saturday')">Saturday</button>
@@ -95,14 +105,26 @@
 <hr class =“style1” style="padding-top:20px;padding-bottom:20px;">
 
 <div id="teams">
-  <h1 style="padding-left:10%;padding-bottom:20px;">TEAMS</h1>
+  <h1 style="padding-left:10%;padding-bottom:20px;font-family:'Barlow';">Teams</h1>
   <div style="display: inline-block;position: relative;">
     <img src="img/team.png" width=60% style="display:block;margin:auto;" alt="team">
     <a href="https://www.facebook.com/groups/2114116722143511/">
-    <img src="img/fb-logo.png" style="position: absolute;width:5%;left:63.5%;bottom:10%"></a>
+    <img src="img/fb-logo.png" style="position: absolute;width:5%;left:53%;bottom:9%"></a>
 <!--     <map name="team">
       <area shape="rect" coords="652,384,720,453" alt="fbLink" href="https://www.facebook.com/groups/2114116722143511/">
     </map> -->
+  </div>
+</div>
+
+<hr class =“style1” style="padding-top:20px;padding-bottom:20px;">
+
+<div id="mentors">
+  <h1 style="padding-left:10%;padding-bottom:20px;font-family:'Barlow';">Mentor Info</h1>
+  <div id="descriptionlower" style="background:white; border-color:#fa8dd5;margin-right:10%;margin-left:10%;">
+    <p style="font-size:1.3em;text-align:center;">Click below to see who has been assigned your mentor or mentee. We recommend finding your buddy online via Facebook or Slack before the hackathon, so you can get to know each other a bit beforehand.</p>
+  </div>
+  <div class="wrapper_sign" align="center" style="padding-top:20px;">
+    <p><br><a href="https://docs.google.com/spreadsheets/d/1mD-wbPOa6sKA3TStfSbblrps65gMkCO-X3ZkKqYfsMk/edit#gid=0" class="sign" target="_blank" style="margin-top:3em;padding-top:20px;">SEE MENTOR LIST</a>
   </div>
 </div>
 
