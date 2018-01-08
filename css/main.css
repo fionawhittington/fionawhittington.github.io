@@ -566,8 +566,8 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 i {
-  border: dashed black;
-  border-width: 0 3px 3px 0;
+  /*border: dashed black;*/
+  /*border-width: 0 3px 3px 0;*/
   display: inline-block;
   padding: 3px;
 }
@@ -2297,4 +2297,33 @@ hr.style1{
   border-bottom: 7px dashed #fa8dd5;
   text-align: center;
   max-width: 91%;
+}
+
+h1.barlow{
+  /*padding-left:10%;*/
+  text-align: center;
+  padding-bottom:20px;
+  font-family:'Barlow';
+}
+
+h2.logistics{
+  color:black;
+  font-weight: bold;
+  /*padding-left:10%;*/
+  /*padding-bottom:20px;*/
+  /*text-align: center;*/
+}
+
+p.logistics{
+  /*color:black;*/
+  /*padding-left:10%;*/
+  padding-bottom:20px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color:black;
+  /*text-align: center;*/
+}
+
+#address{
+  background: #C1F881;
 }
