@@ -2077,7 +2077,7 @@ section#s {
   }
 
   #mobile-schedule-button{
-    display: none;
+    display: none !important;
   }
 
   #schedule-mobile{
