@@ -805,6 +805,10 @@ i {
     left: -12px;
   }
 
+  #schedule-button{
+    display: none;
+  }
+
   #venueinfo{
     max-width:90%;
     margin:auto;
@@ -2069,6 +2073,10 @@ section#s {
 
 @media screen and (min-width:500px) and (max-width:3000px) {
   #date-mobile {
+    display: none;
+  }
+
+  #mobile-schedule-button{
     display: none;
   }
 
