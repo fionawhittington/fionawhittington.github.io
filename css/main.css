@@ -138,7 +138,7 @@ p {
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 4.2em;
   font-family: bebas;
   color: #2d3033;
 }
@@ -803,6 +803,20 @@ i {
     width: 300px;
     height: 230px;
     left: -12px;
+  }
+
+  #venueinfo{
+    max-width:90%;
+    margin:auto;
+  }
+
+  #teams{
+    display:none;
+  }
+
+  #schedule{display: none;}
+  #logistics-mobile-hide{
+    display: none;
   }
   #anim-text {
     font-size: 13px;
@@ -2058,6 +2072,10 @@ section#s {
     display: none;
   }
 
+  #schedule-mobile{
+    display: none;
+  }
+
   #challengeMobileMenu{
     display: none;
   }
@@ -2326,4 +2344,52 @@ p.logistics{
 
 #address{
   background: #C1F881;
+}
+
+#workshop_logistics{
+  text-align: center;
+}
+
+.workshop_img{
+  max-width: 75%;
+  margin-bottom: 1em;
+}
+
+.workshop_des{
+  text-align: left;
+  max-width:92%;
+  margin:auto;
+}
+
+h2.workshops{
+  color:black;
+  font-weight: bold;
+  font-size:1.8em;
+}
+
+p.workshop_host{
+  /*color:black;*/
+  /*padding-left:10%;*/
+  padding-bottom:5px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color:black;
+  /*text-align: center;*/
+}
+
+.col-md-4.workshop, .col-md-3.workshop{
+  padding:2em;
+}
+
+.fa{
+  font-family:FontAwesome !important;
+  font-weight:normal !important;
+}
+
+.schedule-list{
+  color:black;
+  font-size:1.2em;
+  line-height: 1.3em;
+  padding-left:1em;
+
 }
