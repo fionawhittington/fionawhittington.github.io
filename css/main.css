@@ -822,6 +822,10 @@ i {
   #logistics-mobile-hide{
     display: none;
   }
+
+  #panel_graphic_hide{
+    display: none;
+  }
   #anim-text {
     font-size: 13px;
     top: 177px;
@@ -2385,7 +2389,7 @@ p.workshop_host{
   /*text-align: center;*/
 }
 
-.col-md-4.workshop, .col-md-3.workshop{
+.col-md-4.workshop, .col-md-3.workshop, .col-md-5.workshop{
   padding:2em;
 }
 
@@ -2400,4 +2404,18 @@ p.workshop_host{
   line-height: 1.3em;
   padding-left:1em;
 
+}
+
+#panel-graphic{
+  width:75%;
+  margin:auto;
+}
+
+.panel-title{
+  color:black;
+  font-weight:bold;
+  font-size:1.6em;
+  line-height: 2em;
+  padding:.3em;
+  margin-bottom:.3em;
 }
