@@ -640,3 +640,8 @@ ul li {
   font-size:.8em;
   font-weight: normal;
 }
+
+.company-highlight{
+  font-weight:600;
+  font-size:1.2em;
+}

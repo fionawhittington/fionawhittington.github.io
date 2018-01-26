@@ -2427,3 +2427,8 @@ p.workshop_host{
   padding:.3em;
   margin-bottom:.3em;
 }
+
+#company-highlight{
+  font-weight:bold;
+  font-size:1.2em;
+}
