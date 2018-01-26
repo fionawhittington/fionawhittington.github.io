@@ -798,11 +798,15 @@ i {
   left: 80px;
 }
 
-@media(max-width:511px) {
+@media(max-width:530px) {
   #logo-blank {
     width: 300px;
     height: 230px;
     left: -12px;
+  }
+
+  #hide-mobile-live-site{
+    display: none;
   }
 
   #schedule-button{
@@ -2077,6 +2081,10 @@ section#s {
 
 @media screen and (min-width:500px) and (max-width:3000px) {
   #date-mobile {
+    display: none;
+  }
+
+  #mobile-live-link{
     display: none;
   }
 
