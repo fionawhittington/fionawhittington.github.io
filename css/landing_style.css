@@ -1,0 +1,157 @@
+html, body {
+	height: 100%;
+	font-family: "Barlow";
+}
+
+#title {
+	padding-top: 1%;
+	font-family: "Bebas";
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 1.1em;
+}
+
+.a:hover{
+	text-decoration: none;
+}
+
+.container.holder {
+	/*border-style: solid;*/
+	/*border-color: black;*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: auto;
+}
+
+#right_side {
+	float: right;
+	max-width: 60%;
+	height: 100%;
+
+
+}
+
+#image {
+	size: absolute;
+	padding: 0;
+	margin: 0;
+	height:100%;
+	max-width:100%;
+	float: right;
+
+}
+
+.socialicon {
+	width: 50px;
+	height: 50px;
+}
+
+#main_part {
+	float: left;
+	display: inline-block;
+	max-width: 40%;
+	max-height: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-left: 4%;
+}
+
+#texts {
+	max-height: 80%;
+	max-width: : 100%;
+
+}
+
+#logo {
+	margin-top: 5%;
+	width: 30%;
+}
+
+.mx-auto.mailing_list{
+
+	background: #f5d27c;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top:5%;
+	width:70%;
+	margin-left:12.5%;
+	border-radius: 10px;
+	padding: .1em;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+.mx-auto.mailing_list:hover {
+  background-color: #C1F881;
+  color: black;
+  text-decoration: none;
+}
+
+h1:hover {
+	text-decoration: none;
+}
+
+/*MOBILE RESPONSIVENESS ADDED FOR IMAGE*/
+@media screen and (max-width: 500px){
+	#image{
+		display: none;
+	}
+	.container.mx-autoholder{
+		display: block;
+		width:100%;
+	}
+	#main_part{
+		max-width:100%;
+	}
+
+	#logo{
+		width:45%;
+	}
+
+	#social-media-icons{
+		display: flex;
+		padding-left:7.7%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.8em;
+	}
+
+}
+
+#social-media-icons{
+	margin-top:7%;
+	margin-left:7%;
+	position: center;
+	margin-bottom:3%;
+}
