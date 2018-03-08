@@ -28,18 +28,14 @@ html, body {
 	float: right;
 	max-width: 60%;
 	height: 100%;
-
-
+	overflow: hidden;
 }
 
 #image {
-	size: absolute;
 	padding: 0;
 	margin: 0;
-	height:100%;
-	max-width:100%;
+	height: 100%;
 	float: right;
-
 }
 
 .socialicon {
@@ -52,15 +48,14 @@ html, body {
 	display: inline-block;
 	max-width: 40%;
 	max-height: 100%;
-	margin-left: 0%;
-	margin-right: 0%;
-	padding-left: 4%;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #texts {
 	max-height: 80%;
-	max-width: : 100%;
-
+	max-width: 100%;
+	margin-top: 20px;
 }
 
 #logo {
@@ -68,19 +63,27 @@ html, body {
 	width: 30%;
 }
 
-.mx-auto.mailing_list{
+.hero-text {
+	font-size: 20px;
+	line-height: 1.1;
+}
+
+.join-mail-button {
 
 	background: #f5d27c;
 	color: black;
-	font-size: 1em;
-	font-weight: bold;
-	letter-spacing: 2px;
-	margin-top:5%;
-	width:70%;
-	margin-left:12.5%;
-	border-radius: 10px;
-	padding: .1em;
-	box-shadow: 3px 3px 5px #888888;
+	margin-top: 5%;
+	width: 70%;
+	padding: 0.1em;
+	box-shadow: 2px 2px 2px #AAA;
+
+	/* Center */
+	margin: 0 auto;
+}
+
+.join-mail-button-text {
+	font-family: "Barlow";
+  font-size: 30px;
 }
 
 .mx-auto.mailing_list:hover {
@@ -150,8 +153,14 @@ h1:hover {
 }
 
 #social-media-icons{
-	margin-top:7%;
+/*	margin-top:7%;
 	margin-left:7%;
 	position: center;
-	margin-bottom:3%;
+	margin-bottom:3%;*/
+	position: relative;
+	bottom: -30px;
+}
+
+.social-icon {
+	text-align: center;
 }
