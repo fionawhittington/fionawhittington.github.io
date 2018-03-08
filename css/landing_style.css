@@ -69,16 +69,9 @@ html, body {
 }
 
 .join-mail-button {
-
 	background: #f5d27c;
 	color: black;
 	margin-top: 5%;
-	width: 70%;
-	padding: 0.1em;
-	box-shadow: 2px 2px 2px #AAA;
-
-	/* Center */
-	margin: 0 auto;
 }
 
 .join-mail-button-text {
