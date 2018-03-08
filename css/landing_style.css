@@ -72,6 +72,11 @@ html, body {
 	background: #f5d27c;
 	color: black;
 	margin-top: 5%;
+	font-size: 25px;
+	border-radius: 5px;
+	font-weight: bold;
+	box-shadow: 3px 3px 2px #AAA;
+	font-family: "Barlow";
 }
 
 .join-mail-button-text {
