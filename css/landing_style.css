@@ -77,6 +77,7 @@ html, body {
 	font-weight: bold;
 	box-shadow: 3px 3px 2px #AAA;
 	font-family: "Barlow";
+	padding: 10px 40px;
 }
 
 .join-mail-button-text {
