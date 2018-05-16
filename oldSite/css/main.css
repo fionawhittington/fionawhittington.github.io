@@ -85,10 +85,12 @@
   height: 100%;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Barlow);
+font-family: 'Barlow', sans-serif;
+
+
 .engage-text {
   font-size: 1.2em;
-  font-family: 'Roboto Condensed', sans-serif;
-  ;
   font-style: normal;
   font-weight: 400;
   overflow: hidden;
@@ -103,7 +105,7 @@
 .panel-body {
   background-color: #f3a958;
   color: white;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 1.3em;
 }
 
@@ -120,18 +122,17 @@
 
 /* @import url(http://fonts.googleapis.com/css?family=Source%20Sans%20Pro:300,400,500,600,700); */
 
-@font-face {
-  font-family: "Oswald";
-  src: url('Oswald.ttf');
-}
+/*@font-face {
+  font-family: "Barlow";
+}*/
 
 body p {
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Barlow', sans-serif;*/
 }
 
 p {
   font-size: 1.2em;
-  font-family: Oswald;
+  /*font-family: Barlow, sans-serif;*/
   /*font-family: 'Roboto Condensed', sans-serif;*/
   line-height: 20px;
   color: #6c7279;
@@ -139,35 +140,37 @@ p {
 
 h1 {
   font-size: 4.2em;
-  font-family: Oswald;
+  /*font-family: Bebas;*/
+  font-family: 'Bebas', sans-serif;
   color: #2d3033;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 h2 {
   font-size: 25px;
-  font-family: 'Roboto Condensed';
+  /*font-family: 'Barlow', sans-serif;*/
   color: white;
 }
 
 h3 {
   font-size: 24px;
   color: #2d3033;
-  font-family: arial;
+  /*font-family: arial;*/
+  /*font-family: 'Barlow', sans-serif;*/
   font-weight: 300;
 }
 
 h4 {
   font-size: 22px;
   color: #2d3033;
-  font-family: Oswald;
+  font-family: 'Bebas', sans-serif;
   font-weight: 400;
 }
 
 h5 {
   font-size: 14px;
   color: #2d3033;
-  font-family: Oswald;
+  font-family: 'Bebas', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -192,7 +195,7 @@ h5 {
 
 .btn-large {
   padding: 15px 40px;
-  font-family: Roboto;
+  /*font-family: Barlow;*/
 }
 
 .btn2 {
@@ -206,7 +209,7 @@ h5 {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   display: inline-block;
-  font-family: Roboto;
+  font-family: 'Barlow';
   margin-top: 20px;
 }
 
@@ -383,7 +386,8 @@ ul li {
   color: rgba(255, 255, 255, 0.75);
   font-size: 18px;
   font-weight: 400;
-  font-family: Oswald;
+  font-family: 'Bebas', sans-serif;
+  /*font-family: Bebas;*/
   margin-left: 40px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -582,7 +586,7 @@ i {
   font-size: 34px;
   color: white;
   animation: textanimation 2s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimation {
@@ -604,7 +608,8 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationGoogle 2.5s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  /*font-family: "Bebas";*/
+  font-family: 'Bebas';
 }
 
 @keyframes textanimationGoogle {
@@ -626,7 +631,7 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationFacebook 2.3s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationFacebook {
@@ -648,7 +653,7 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationRedhat 2s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationRedhat {
@@ -670,7 +675,7 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationBloomberg 2s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationBloomberg {
@@ -692,7 +697,7 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationJPMorgan 1.5s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationJPMorgan {
@@ -714,7 +719,7 @@ i {
   /*font-size: 65px;*/
   color: white;
   animation: textanimationWashington 1.5s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationWashington {
@@ -735,7 +740,7 @@ i {
 #wordcloudQ {
   color: white;
   animation: textanimationQ 2.5s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationQ {
@@ -756,7 +761,7 @@ i {
 #wordcloudCBRE {
   color: white;
   animation: textanimationCBRE 2.5s ease-in-out 0s infinite;
-  font-family: "Oswald";
+  font-family: "Bebas";
 }
 
 @keyframes textanimationCBRE {
@@ -780,7 +785,7 @@ i {
 }
 
 #anim-text {
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 20px;
   color: white;
   position: relative;
@@ -863,7 +868,7 @@ i {
   }
   .title-responsive {
     font-size: 1.1em;
-    font-family: "Oswald", sans-serif;
+    font-family: "Bebas", sans-serif;
   }
   #expect {
     font-size: 14px;
@@ -976,7 +981,7 @@ i {
 
 .banner-text h1 {
   color: #fdab5f;
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 143px;
   letter-spacing: 10px;
   font-weight: 700;
@@ -985,7 +990,7 @@ i {
 
 .banner-text h2 {
   color: black;
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 32px;
   letter-spacing: 20px;
   font-weight: 700;
@@ -994,7 +999,7 @@ i {
 
 .banner-text h4 {
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 2px;
   letter-spacing: 20px;
   font-weight: 700;
@@ -1009,12 +1014,12 @@ i {
   line-height: 24px;
   text-transform: uppercase;
   margin: auto;
-  font-family: 'Roboto Condensed';
+  /*font-family: 'Roboto Condensed';*/
 }
 
 .banner button {
   color: black;
-  font-family: Oswald;
+  font-family: Bebas;
   background: white;
   padding: 10px;
   font-size: 20px;
@@ -1060,7 +1065,7 @@ i {
 
 .intro h1 {
   color: #2d3033;
-  font: 30px "Oswald";
+  font: 30px "Bebas";
   padding-bottom: 25px;
 }
 
@@ -1124,7 +1129,7 @@ section#about, #whatIsAHackathon, #whatToExpect {
 
 .about h1 {
   color: #2d3033;
-  font: 30px "Oswald";
+  font: 30px "Bebas";
   padding-bottom: 25px;
 }
 
@@ -1138,7 +1143,7 @@ section#about, #whatIsAHackathon, #whatToExpect {
 }
 
 .about h3 {
-  font-family: Oswald;
+  font-family: Bebas;
   font-size: 16px;
   letter-spacing: 4px;
 }
@@ -1160,7 +1165,7 @@ section#about, #whatIsAHackathon, #whatToExpect {
 }
 
 span.registeroptions {
-  font-family: Oswald;
+  font-family: Bebas;
   vertical-align: middle;
   text-transform: uppercase;
 }
@@ -1177,13 +1182,13 @@ span.registeroptions {
 
 .register h1 {
   color: white;
-  font: 35px "Oswald";
+  font: 35px "Bebas";
   padding-left: 20px;
 }
 
 .register p {
   color: #99004d;
-  font: 60px "Oswald";
+  font: 60px "Bebas";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1229,7 +1234,7 @@ section#faq {
 
 .faq h1 {
   color: #2d3033;
-  /*font: 3.5em "Oswald";*/
+  /*font: 3.5em "Bebas";*/
   padding-bottom: 25px;
   text-align: center;
 }
@@ -1266,7 +1271,7 @@ section#faq {
 
 .banner-text h3 {
   color: black;
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 24px;
   letter-spacing: 10px;
   font-weight: 700;
@@ -1275,7 +1280,7 @@ section#faq {
 
 .banner-text h4 {
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Bebas";
   font-size: 2px;
   letter-spacing: 20px;
   font-weight: 700;
@@ -1371,14 +1376,14 @@ section#sponsorship {
 
 .sponsor h1 {
   color: black;
-  /*font: 30px "Oswald";*/
+  /*font: 30px "Bebas";*/
   padding-bottom: 25px;
 }
 
 .sponsor h2 {
   color: #2d3033;
   text-align: center;
-  font: 14px "Oswald";
+  font: 14px "Bebas";
   font-style: normal;
   font-weight: 400;
   margin: 0 !important;
@@ -1386,13 +1391,13 @@ section#sponsorship {
 
 .sponsor h3 {
   color: #2d3033;
-  /*font: 50px "Oswald";*/
+  /*font: 50px "Bebas";*/
   padding-bottom: 15px;
 }
 
 .sponsor h4 {
   color: black;
-  font: 30px "Oswald";
+  font: 30px "Bebas";
   padding-bottom: 15px;
 }
 
@@ -1410,7 +1415,7 @@ section#sponsorship {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: black;
-  font-family: "Oswald";
+  font-family: "Bebas";
   letter-spacing: 2px;
 }
 
@@ -1440,13 +1445,13 @@ section#profile {
 
 .person {
   max-width: 270px;
-  font: Oswald;
+  font: Bebas;
   text-align: center;
 }
 
 .person-content {
   margin-top: 20px;
-  font: Oswald;
+  font: Bebas;
 }
 
 .profile h3 {
@@ -1455,20 +1460,20 @@ section#profile {
 
 .profile h1 {
   color: #2d3033;
-  /*font: 50px "Oswald";*/
+  /*font: 50px "Bebas";*/
 }
 
 .profile h2: {}
 
 .person h4 {
   font-weight: 400;
-  font: Oswald;
+  font: Bebas;
 }
 
 .person h5 {
   color: #e84545;
   font-size: 13px;
-  font: Oswald;
+  font: Bebas;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1501,7 +1506,7 @@ section#profile {
   border-radius: 50%;
   color: #c6cacc;
   font-size: 14px;
-  font: Oswald;
+  font: Bebas;
   height: 32px;
   line-height: 32px;
   text-align: center;
@@ -1612,7 +1617,7 @@ section#description {
 
 .description h1 {
   color: #2d3033;
-  /*font: 3.5em "Oswald";*/
+  /*font: 3.5em "Bebas";*/
   padding-bottom: 10px;
   text-align: center;
 }
@@ -1628,7 +1633,7 @@ section#description {
 .description p {
   color: #2d3033;
   font-size: 1.3em;
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: "Barlow", sans-serif;*/
   font-style: normal;
   font-weight: 400;
 }
@@ -1657,7 +1662,7 @@ section#subdescription {
 
 .subdescription h1 {
   color: #2d3033;
-  font: 40px "Oswald";
+  font: 40px "Bebas";
   padding-bottom: 10px;
   text-align: center;
 }
@@ -1721,7 +1726,7 @@ section#subdescription {
   top: 5%;
   right:0%;
   width: 60%;
-  font-family: Oswald;
+  font-family: Bebas;
   font-size: 1.4em;
   box-shadow: 3px 3px 5px #888888;
   border-radius: 10px;
@@ -1736,7 +1741,7 @@ section#subdescription {
   top: 5%;
   right: 0%;
   width: 60%;
-  font-family: Oswald;
+  /*font-family: Bebas;*/
   font-size: 1.4em;
   box-shadow: 3px 3px 5px #888888;
   border-radius: 10px;
@@ -1749,7 +1754,7 @@ section#subdescription {
   background: #FFD46F;
   border-style: dashed;
   border-width: .3em;
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
   padding: 2%;
   width: 80%;
 }
@@ -1868,7 +1873,7 @@ section#subdescription {
   top: 38%;
   right: 13%;
   padding: 10px;
-  font-family: Oswald;
+  /*font-family: Bebas;*/
   font-size: 1.5em;
   box-shadow: 3px 3px 5px #888888;
   border-radius: 10px;
@@ -1881,7 +1886,7 @@ section#subdescription {
   top: 38%;
   right: 13%;
   padding: 8px;
-  font-family: Oswald;
+  /*font-family: Bebas;*/
   font-size: 2.2em;
   box-shadow: 3px 3px 5px #888888;
   border-radius: 10px;
@@ -1894,7 +1899,7 @@ section#subdescription {
   top: 38%;
   right: 13%;
   padding: 8px;
-  font-family: Oswald;
+  /*font-family: Bebas;*/
   font-size: 2.2em;
   box-shadow: 3px 3px 5px #888888;
   border-radius: 10px;
@@ -2187,7 +2192,7 @@ font-weight: bold;
     background-color: #000000;
     padding-left: 10%;
     /*width:33%;*/
-    font-family: Oswald;
+    /*font-family: Bebas;*/
 }
 
 /* Style the buttons inside the tab */

@@ -798,11 +798,16 @@ i {
   left: 80px;
 }
 
+
 @media(max-width:530px) {
   #logo-blank {
     width: 300px;
     height: 230px;
     left: -12px;
+  }
+
+  #old_site_button{
+
   }
 
   #hide-mobile-live-site{
@@ -2431,4 +2436,9 @@ p.workshop_host{
 #company-highlight{
   font-weight:bold;
   font-size:1.2em;
+}
+
+button#old_site_button{
+  margin-left: 10% !important;
+  font-size:10em;
 }

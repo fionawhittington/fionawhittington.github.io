@@ -116,6 +116,9 @@ h1:hover {
 		display: flex;
 		padding-left:7.7%;
 	}
+	button#old_site_button{
+		width: 45%;
+	}
 
 }
 
@@ -129,6 +132,17 @@ h1:hover {
 	}
 }
 
+button#old_site_button{
+	float: right;
+	margin-top: 5%;
+	border-radius: 7px;
+	background: #C1F881;
+	font-family: 'Barlow', sans-serif;
+	font-size:1.2em;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 @media screen and (max-width: 768px) {
 	h1 {
