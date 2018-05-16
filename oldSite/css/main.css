@@ -2303,7 +2303,7 @@ font-weight: bold;
 }
 
 .row.challengerow h1{
-  font-family: 'Roboto Condensed';
+  font-family: 'Barlow';
   font-size: 3em;
 }
 
@@ -2347,7 +2347,7 @@ h1.barlow{
   /*padding-left:10%;*/
   text-align: center;
   padding-bottom:20px;
-  font-family:'Roboto Condensed';
+  font-family:'Barlow';
 }
 
 h2.logistics{
