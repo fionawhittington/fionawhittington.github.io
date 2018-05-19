@@ -1,179 +1,460 @@
 html, body {
-	height: 100%;
-	font-family: "Barlow";
+    height: 100%;
+    font-family: "Barlow";
 }
 
 #title {
-	padding-top: 1%;
-	font-family: "Bebas";
-	font-weight: 800;
-	letter-spacing: 2px;
-	line-height: 1.1em;
+    padding-top: 1%;
+    font-family: "Bebas";
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.1em;
 }
 
 .a:hover{
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .container.holder {
-	/*border-style: solid;*/
-	/*border-color: black;*/
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: auto;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
 }
 
 #right_side {
-	float: right;
-	max-width: 60%;
-	height: 100%;
-	overflow: hidden;
+    float: right;
+    max-width: 60%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #image {
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	float: right;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    float: right;
 }
 
 .socialicon {
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 #main_part {
-	float: left;
-	display: inline-block;
-	max-width: 40%;
-	max-height: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
+    float: left;
+    display: inline-block;
+    max-width: 40%;
+    max-height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #texts {
-	max-height: 80%;
-	max-width: 100%;
-	margin-top: 20px;
+    max-height: 80%;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 #logo {
-	margin-top: 5%;
-	width: 30%;
+    margin-top: 5%;
+    width: 40%;
 }
 
 .hero-text {
-	font-size: 20px;
-	line-height: 1.1;
+    font-size: 20px;
+    line-height: 1.1;
 }
 
 .join-mail-button {
-	background: #f5d27c;
-	color: black;
-	margin-top: 5%;
-	font-size: 25px;
-	border-radius: 5px;
-	font-weight: bold;
-	box-shadow: 3px 3px 2px #AAA;
-	font-family: "Barlow";
-	padding: 10px 40px;
+    background: #f5d27c;
+    color: black;
+    margin-top: 5%;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px #AAA;
+    font-family: "Barlow";
+    padding: 10px 40px;
 }
 
 .join-mail-button-text {
-	font-family: "Barlow";
-  font-size: 30px;
+    font-family: "Barlow";
+    font-size: 30px;
 }
 
 .mx-auto.mailing_list:hover {
-  background-color: #C1F881;
-  color: black;
-  text-decoration: none;
+    background-color: #C1F881;
+    color: black;
+    text-decoration: none;
 }
 
 h1:hover {
-	text-decoration: none;
+    text-decoration: none;
+}
+
+/******* Hamburger and navigation menu on DESKETOP ********/
+
+.hamburger-ctn{
+    display: inline;
+}
+
+.checkbox-container {
+    display: block;
+    float: right;
+    position: relative;
+    margin-top: 30px;
+}
+
+.trigger {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.hamburger-menu, .hamburger-menu::before, .hamburger-menu::after {
+    display: block;
+    position: absolute;
+    background: black;
+    width: 45px;
+    height: 5px;
+    margin: 1.5em 3em;
+    transition: background 0.3s;
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+}
+
+.hamburger-menu::before, .hamburger-menu::after {
+    content: '';
+    position: absolute;
+    margin: -1em 0 0;
+    -webkit-transition: width 0.3s ease 0.3s, transform 0.3s ease 0.3s;    
+    transition: width 0.3s ease 0.3s, transform 0.3s ease 0.3s;
+}
+
+.hamburger-menu::after {
+    margin-top: 1em; 
+}
+
+.hamburger-menu {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top: 1.45em;
+    margin-right: 0.35em;
+    margin-left: 0.35em;
+    margin-bottom: 1.45em;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+    top: 7px;
+    left: 3px;
+}
+
+.trigger:checked {
+    left: 190px;
+}
+
+.trigger:checked + .menu-content .hamburger-menu {
+    width: 3em;
+    -webkit-transition: width 0.3s ease 0.3s;
+    transition: width 0.3s ease 0.3s;
+}
+
+.trigger:checked + .menu-content .hamburger-menu::before {
+    width: 1.2em;
+    transform: rotate(-35deg);
+    margin-top: -0.4em;
+}
+
+.trigger:checked + .menu-content .hamburger-menu::after {
+    width: 1.2em;
+    transform: rotate(35deg);
+    margin-top: 0.4em;
+}
+
+.trigger:checked + .menu-content ul {
+    width: 180px;
+    height: 150px;
+    -webkit-transition: width 0.3s ease 0.3s, height 0.3s ease;
+    transition: width 0.3s ease 0.3s, height 0.3s ease;
+    background: #FEE3FD;
+}
+
+.menu-content {
+    display: flex;
+    background: white;
+    color: white;
+    float: left;
+}
+
+.menu-content ul {
+    display: block;
+    padding-left: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease 0.3s, width 0.3s ease;
+    transition: height 0.3s ease 0.3s, width 0.3s ease;
+}
+
+.menu-content ul li {
+    list-style: none;
+    padding: 1em .3em 1em .3em;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-content ul li:hover {
+    background: white;
+}
+
+
+/*********** styling for the hamburger menu on MOBILE ************/
+
+.toggle-button-mobile {
+    position: fixed;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 9px 10px;
+    margin: 8px 15px 8px 0;
+    height: 45px;
+    width: 55px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+    left: 80%;
+    top: 2%;
+}
+
+.bar {
+    background-color: black;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+}
+
+.bar + .bar {
+    margin-top: 4px;
+}
+
+.middle {
+    top: 15px;
+}
+
+.bottom {
+    top: 30px;
+}
+
+.toggle-active .bar {
+    background-color: black;
+}
+
+.toggle-active .top {
+    -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+}
+
+.toggle-active .middle {
+    opacity: 0;
+}
+
+.toggle-active .bottom {
+    -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+}
+
+
+/** styling for the overlay. The sliding-down effect of the overlay is given by the initial zero height and the onclick 100% height. **/
+
+.overlay {
+    position: fixed;
+    background-color: rgba(254, 225, 253, 0.92);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .30s, visibility .30s, height .45s;
+    z-index: 4;
+}
+
+
+/* class added to the overlay on click*/
+
+.nav-active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.overlay ul {
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.overlay ul li {
+    display: block;
+    margin-top: 10px;
+}
+
+.overlay ul li a {
+    color: black;
+    text-decoration: underline;
 }
 
 /*MOBILE RESPONSIVENESS ADDED FOR IMAGE*/
 @media screen and (max-width: 500px){
-	#image{
-		display: none;
-	}
-	.container.mx-autoholder{
-		display: block;
-		width:100%;
-	}
-	#main_part{
-		max-width:100%;
-	}
+    #image{
+        display: none;
+    }
+    .container.mx-autoholder{
+        display: block;
+        width:100%;
+    }
+    #main_part{
+        max-width:100%;
+    }
 
-	#logo{
-		width:45%;
-	}
+    #logo{
+        width:45%;
+    }
 
-	#social-media-icons{
-		display: flex;
-		padding-left:7.7%;
-	}
-	button#old_site_button{
-		width: 45%;
-	}
+    #social-media-icons{
+        display: flex;
+        padding-left:7.7%;
+    }
+
+    .checkbox-container {
+        margin-top: 10px;
+    }
+
+    .trigger:checked + .menu-content ul {
+        width: 150px;
+        height: 180px;
+    }
+
+    .trigger:checked {
+        left: 160px;
+    }
+
+    .hamburger-ctn{
+        display: none;
+    }
+
+    .toggle-button-mobile {
+        display: inline-block;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
-	h1 {
-		font-size: 1.8em;
-	}
+    h1 {
+        font-size: 1.8em;
+    }
 
-	h2 {
-		font-size: 1.3em;
-	}
-}
-
-button#old_site_button{
-	float: right;
-	margin-top: 5%;
-	border-radius: 7px;
-	background: #C1F881;
-	font-family: 'Barlow', sans-serif;
-	font-size:1.2em;
-	padding: 10px;
-	text-transform: uppercase;
-	font-weight: bold;
+    h2 {
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 768px) {
-	h1 {
-		font-size: 2em;
-	}
+    h1 {
+        font-size: 2em;
+    }
 
-	h2 {
-		font-size: 1.5em;
-	}
+    h2 {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-	h1 {
-		font-size: 2.5em;
-	}
+    h1 {
+        font-size: 2.5em;
+    }
 
-	h2 {
-		font-size: 1.8em;
-	}
+    h2 {
+        font-size: 1.8em;
+    }
 
 }
 
 #social-media-icons{
-/*	margin-top:7%;
-	margin-left:7%;
-	position: center;
-	margin-bottom:3%;*/
-	position: relative;
-	bottom: -30px;
+    /*	margin-top:7%;
+    margin-left:7%;
+    position: center;
+    margin-bottom:3%;*/
+    position: relative;
+    bottom: -30px;
 }
 
 .social-icon {
-	text-align: center;
+    text-align: center;
 }
+
+/*
+
+button#old_site_button{
+float: right;
+margin-top: 2%;
+border-radius: 7px;
+background: #C1F881;
+font-family: 'Barlow', sans-serif;
+font-size:1.2em;
+padding: 10px;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+
+button#new_site_button{
+float: right;
+border-radius: 7px;
+margin-top: 2%;
+background: #F982F1;
+font-family: 'Barlow', sans-serif;
+font-size:1.2em;
+padding: 10px;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
