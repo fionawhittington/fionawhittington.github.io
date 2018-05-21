@@ -13,8 +13,14 @@ body {
   color: #ffffff;
 }
 
-h1, h3, h4{
+h1, h3, h4, h2{
   color: black;
+}
+
+#promo_video{
+  margin-top: 3%;
+  width: 80%;
+  height: 550px;
 }
 
 .hero {
