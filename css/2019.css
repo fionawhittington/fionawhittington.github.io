@@ -4,62 +4,136 @@
 }
 
 html, body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: Bebas;
-  text-align: center;
-  color: #ffffff;
+    font-family: Bebas;
+    text-align: center;
+    color: #ffffff;
 }
 
-h1, h3, h4, h2{
-  color: black;
+h1, h2, h3, h4, p{
+    color: black;
 }
 
 #promo_video{
-  margin-top: 3%;
-  width: 80%;
-  height: 550px;
+    margin-top: 3%;
+    width: 80%;
+    height: 550px;
 }
 
 .hero {
-  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://static.pexels.com/photos/94425/pexels-photo-94425.jpeg") no-repeat;
-  background-size: cover;
-  background-position: 30% 20%;
-  height: 100%;
-  width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://static.pexels.com/photos/94425/pexels-photo-94425.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 30% 20%;
+    height: 100%;
+    width: 100%;
 }
 
 .hero-text {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 70px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 70px;
 }
 
 .text {
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 300;
-  marign: 0;
-  line-height: 1;
-  color: #ffffff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 300;
+    marign: 0;
+    line-height: 1;
+    color: #ffffff;
 }
 
 .typed-cursor {
-       opacity: 1;
-       animation: blink .7s infinite;
-   }
+    opacity: 1;
+    animation: blink .7s infinite;
+}
 
-   @keyframes blink {
-       0% {
-           opacity: 1;
-       }
-       50% {
-           opacity: 0;
-       }
-       100% {
-           opacity: 1;
-       }
-   }
+/* Based on Becca's Palette */
+
+.green-shade{
+    background-color: #C1F881;
+}
+
+.pink-shade{
+    background-color: #FA8DD5;
+}
+
+.orange-shade{
+    background-color: #FFD46F;
+}
+
+.blue-shade{
+    background-color: #82DCFE;
+}
+
+/****************************/
+
+/* Fonts */
+.lato{
+    font-family: Lato;
+}
+
+.overpass{
+    font-family: Overpass;
+}
+
+/******/
+
+.register{
+    font-family: bebas;
+    height: 60px;
+    background-color: #82DCFE;
+    box-shadow: 8px 8px #C1F881;
+
+    position: relative;
+    top: 35%;
+}
+
+.register:hover{
+    background-color: #FA8DD5;
+    box-shadow: 8px 8px #FFD46F;
+}
+
+.register h4{
+    margin: 0;
+}
+
+.btn-ctn{
+    height: 100%;
+}
+
+.faq-box{
+    height: 110px;
+}
+
+/* Social Media Links */
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-space div{
+    width: 1px;
+}
+
+.flex-space img{
+    height: 50px;
+    width: 50px;
+}
+/********************/
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
